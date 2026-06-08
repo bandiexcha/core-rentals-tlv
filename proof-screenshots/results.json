@@ -1,0 +1,60 @@
+{
+  "base": "http://localhost:3000",
+  "results": [
+    {
+      "slug": "mamad-tel-aviv-paradise-haven",
+      "url": "http://localhost:3000/apartments/mamad-tel-aviv-paradise-haven",
+      "heroScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\mamad-tel-aviv-paradise-haven-hero.png",
+      "galleryScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\mamad-tel-aviv-paradise-haven-gallery.png",
+      "photosInCatalog": 20,
+      "imagesLoaded": 20,
+      "imagesBroken": 0,
+      "firstImageSrc": "/_next/image?url=%2Fapartments%2Fmamad-tel-aviv-paradise-haven%2F01.jpg&w=3840&q=75",
+      "pass": true
+    },
+    {
+      "slug": "contemporary-3br-apt-near-geula-beach",
+      "url": "http://localhost:3000/apartments/contemporary-3br-apt-near-geula-beach",
+      "heroScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\contemporary-3br-apt-near-geula-beach-hero.png",
+      "galleryScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\contemporary-3br-apt-near-geula-beach-gallery.png",
+      "photosInCatalog": 21,
+      "imagesLoaded": 21,
+      "imagesBroken": 0,
+      "firstImageSrc": "/_next/image?url=%2Fapartments%2Fcontemporary-3br-apt-near-geula-beach%2F01.jpg&w=3840&q=75",
+      "pass": true
+    },
+    {
+      "slug": "spacious-2br-apt-in-balfour-with-mamad",
+      "url": "http://localhost:3000/apartments/spacious-2br-apt-in-balfour-with-mamad",
+      "heroScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\spacious-2br-apt-in-balfour-with-mamad-hero.png",
+      "galleryScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\spacious-2br-apt-in-balfour-with-mamad-gallery.png",
+      "photosInCatalog": 20,
+      "imagesLoaded": 20,
+      "imagesBroken": 0,
+      "firstImageSrc": "/_next/image?url=%2Fapartments%2Fspacious-2br-apt-in-balfour-with-mamad%2F01.jpg&w=3840&q=75",
+      "pass": true
+    },
+    {
+      "slug": "stylish-sea-view-2br-apartment",
+      "url": "http://localhost:3000/apartments/stylish-sea-view-2br-apartment",
+      "heroScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\stylish-sea-view-2br-apartment-hero.png",
+      "galleryScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\stylish-sea-view-2br-apartment-gallery.png",
+      "photosInCatalog": 17,
+      "imagesLoaded": 17,
+      "imagesBroken": 0,
+      "firstImageSrc": "/_next/image?url=%2Fapartments%2Fstylish-sea-view-2br-apartment%2F01.jpg&w=3840&q=75",
+      "pass": true
+    },
+    {
+      "slug": "the-loft",
+      "url": "http://localhost:3000/apartments/the-loft",
+      "heroScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\the-loft-hero.png",
+      "galleryScreenshot": "C:\\Users\\blonj\\core rentals tlv\\proof-screenshots\\the-loft-gallery.png",
+      "photosInCatalog": 14,
+      "imagesLoaded": 14,
+      "imagesBroken": 0,
+      "firstImageSrc": "/_next/image?url=%2Fapartments%2Fthe-loft%2F01.jpg&w=3840&q=75",
+      "pass": true
+    }
+  ]
+}

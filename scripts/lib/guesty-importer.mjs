@@ -186,34 +186,8 @@ async function downloadImages(slug, imageUrls) {
   return filterDownloadedGallery(slug, saved);
 }
 
-async function filterDownloadedGallery(slug, images) {
-  if (!images.length) return images;
-  const filtered = await filterBrandingImagesAsync(
-    images,
-    IMAGES_DIR,
-    slug,
-    KNOWN_BRANDING_HASHES,
-    { definiteOnly: true }
-  );
-
-  if (filtered.length === images.length) return filtered;
-
-  for (const img of images) {
-    if (filtered.some((f) => f.url === img.url)) continue;
-    const rel = img.url?.replace(/^\/apartments\//, "") || "";
-    const fp = path.join(IMAGES_DIR, rel);
-    if (fs.existsSync(fp)) {
-      try {
-        fs.unlinkSync(fp);
-      } catch {}
-    }
-  }
-
-  const renumbered = renumberImagesInFolder(IMAGES_DIR, slug);
-  for (let i = 0; i < renumbered.length && i < filtered.length; i++) {
-    if (filtered[i]?.sourceUrl) renumbered[i].sourceUrl = filtered[i].sourceUrl;
-  }
-  return renumbered;
+async function filterDownloadedGallery(_slug, images) {
+  return images;
 }
 
 function mapGuestyToApartment(detail, images, sourceUrl, { publish = false } = {}) {

@@ -86,9 +86,7 @@ function extractImageUrls(listing) {
 }
 
 function filterListingImages(imageUrls) {
-  return imageUrls.filter(
-    (url) => !/(?:logo|brand|welcome[\-_]?card|marketing|banner|Seanrent\/.*logo)/i.test(url)
-  );
+  return imageUrls;
 }
 
 async function downloadImages(slug, imageUrls) {
@@ -122,26 +120,8 @@ async function downloadImages(slug, imageUrls) {
   return saved;
 }
 
-async function filterDownloadedGallery(slug, images) {
-  if (!images.length) return images;
-  const blocklist = KNOWN_BRANDING_HASHES;
-  const filtered = await filterBrandingImagesAsync(images, IMAGES_DIR, slug, blocklist, {
-    definiteOnly: true,
-    safeMinKeep: 3,
-  });
-  if (filtered.length === images.length) return filtered;
-
-  for (const img of images) {
-    if (filtered.some((f) => f.url === img.url)) continue;
-    const rel = img.url?.replace(/^\/apartments\//, "") || "";
-    const fp = path.join(IMAGES_DIR, rel);
-    if (fs.existsSync(fp)) {
-      try {
-        fs.unlinkSync(fp);
-      } catch {}
-    }
-  }
-  return renumberImagesInFolder(IMAGES_DIR, slug);
+async function filterDownloadedGallery(_slug, images) {
+  return images;
 }
 
 export async function fetchListingDetail(page, listingId, sessionId, retries = 3) {
