@@ -1,0 +1,4 @@
+{
+  "_comment": "Optional: add individual property URLs for batch import. Run: npm run import:catalog -- --batch",
+  "urls": []
+}

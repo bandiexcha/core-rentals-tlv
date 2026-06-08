@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://app.guesty.com/api/pm-websites-backend/listings/69fb33d01cd9700014a4b376?fields=_id+title+nickname+type+roomType+propertyType+accommodates+amenities+bathrooms+bedrooms+beds+bedType+timezone+defaultCheckInTime+defaultCheckOutTime+address+picture+pictures+prices+publicDescription+terms+taxes+reviews+tags+parentId+license+legalCompliance++",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "Bearer null",
+      "referer": "https://holyguest.guestybookings.com/",
+      "sec-ch-ua": "\"Chromium\";v=\"148\", \"HeadlessChrome\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+      "g-aid-cs": "G-89C7E-9FB65-B6F69",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/148.0.7778.96 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "x-request-context": "eyJ2IjoxLCJ3IjoxOTc4NjczLCJzIjoiMXNrcmY5dGkiLCJ1IjoiYmVjYmMzYmEiLCJoIjoiMGNiNmY0YTkxYzQxMjE4NzY3NjA5NzE1Zjk2YmQwZTgifQ=="
+    }
+  },
+  {
+    "url": "https://app.guesty.com/api/pm-websites-backend/listings/69fb33d01cd9700014a4b376/calendar?from=2026-06-07&to=2028-06-07",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "Bearer null",
+      "referer": "https://holyguest.guestybookings.com/",
+      "sec-ch-ua": "\"Chromium\";v=\"148\", \"HeadlessChrome\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+      "g-aid-cs": "G-89C7E-9FB65-B6F69",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/148.0.7778.96 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "x-request-context": "eyJ2IjoxLCJ3IjoxOTc4NjczLCJzIjoiMXNrcmY5dGkiLCJ1IjoiYmVjYmMzYmEiLCJoIjoiMGNiNmY0YTkxYzQxMjE4NzY3NjA5NzE1Zjk2YmQwZTgifQ=="
+    }
+  }
+]

@@ -1,0 +1,1342 @@
+{
+  "imported": {
+    "14475": {
+      "name": "Charming Cabin in the Woods",
+      "slug": "charming-cabin-in-the-woods",
+      "images": 6,
+      "action": "created",
+      "importedAt": "2026-06-07T11:41:00.454Z"
+    },
+    "14556": {
+      "name": "Cozy Apartment in the Heart of Tel Aviv",
+      "slug": "cozy-apartment-in-the-heart-of-tel-aviv",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T11:41:20.773Z"
+    },
+    "14557": {
+      "name": "Panoramic Seaview Balcony Escape",
+      "slug": "panoramic-seaview-balcony-escape",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:41:38.437Z"
+    },
+    "14558": {
+      "name": "Beachfront Property with Balcony",
+      "slug": "beachfront-property-with-balcony",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T11:42:10.129Z"
+    },
+    "14559": {
+      "name": "Mamad Sunlit Elegant 3BR Stay with Mamad",
+      "slug": "mamad-sunlit-elegant-3br-stay-with-mamad",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T11:42:32.997Z"
+    },
+    "14564": {
+      "name": "Modern Gem with Stunning Balcony",
+      "slug": "modern-gem-with-stunning-balcony",
+      "images": 16,
+      "action": "created",
+      "importedAt": "2026-06-07T11:43:00.646Z"
+    },
+    "14565": {
+      "name": "Mamad Bauhaus Artistic Haven with Mamad",
+      "slug": "mamad-bauhaus-artistic-haven-with-mamad",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:43:23.687Z"
+    },
+    "14566": {
+      "name": "Mamad Netanya Panoramic Sea-View 4BR Apt",
+      "slug": "mamad-netanya-panoramic-sea-view-4br-apt",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:43:48.465Z"
+    },
+    "14567": {
+      "name": "Serenity by the Sea – Poleg Villa",
+      "slug": "serenity-by-the-sea-poleg-villa",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T11:44:17.643Z"
+    },
+    "14568": {
+      "name": "Mamad Sea Breeze Netanya Retreat by Sea N' Rent",
+      "slug": "mamad-sea-breeze-netanya-retreat-by-sea-n-rent",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T11:45:01.969Z"
+    },
+    "14573": {
+      "name": "Mamad Stella Maris Vista Apartment by Sea N' Rent",
+      "slug": "mamad-stella-maris-vista-apartment-by-sea-n-rent",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:45:27.343Z"
+    },
+    "14574": {
+      "name": "Mamad Bahai Gardens Vista Penthouse by Sea N' Rent",
+      "slug": "mamad-bahai-gardens-vista-penthouse-by-sea-n-rent",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:45:50.692Z"
+    },
+    "14575": {
+      "name": "Stylish Coastal Oasis",
+      "slug": "stylish-coastal-oasis",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:46:14.134Z"
+    },
+    "14578": {
+      "name": "Authentic Beachfront Apartment",
+      "slug": "authentic-beachfront-apartment",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:46:37.525Z"
+    },
+    "14580": {
+      "name": "Achziv Beach Haven 3BR Apartment by Sea N' Rent",
+      "slug": "achziv-beach-haven-3br-apartment-by-sea-n-rent",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T11:47:11.200Z"
+    },
+    "14584": {
+      "name": "Charming Home in the Heart of Haifa by Sea N Rent",
+      "slug": "charming-home-in-the-heart-of-haifa-by-sea-n-rent",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T11:55:29.056Z"
+    },
+    "14585": {
+      "name": "The Printhouse Boutique Studio 7",
+      "slug": "the-printhouse-boutique-studio-7",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T11:55:59.089Z"
+    },
+    "14586": {
+      "name": "The Printhouse Boutique Studio 8",
+      "slug": "the-printhouse-boutique-studio-8",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:56:25.537Z"
+    },
+    "14587": {
+      "name": "The Printhouse Boutique Studio 9",
+      "slug": "the-printhouse-boutique-studio-9",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T11:56:46.982Z"
+    },
+    "14588": {
+      "name": "The Printhouse Boutique Studio 6",
+      "slug": "the-printhouse-boutique-studio-6",
+      "images": 16,
+      "action": "created",
+      "importedAt": "2026-06-07T11:57:08.283Z"
+    },
+    "14589": {
+      "name": "Vibrant Seaside Stay with Balcony",
+      "slug": "vibrant-seaside-stay-with-balcony",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:57:31.696Z"
+    },
+    "14590": {
+      "name": "Old Charm & Modern Meets in Haifa with Shelter",
+      "slug": "old-charm-modern-meets-in-haifa-with-shelter",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T11:57:58.253Z"
+    },
+    "14591": {
+      "name": "The Printhouse Boutique Studio 5 by Sea N' Rent",
+      "slug": "the-printhouse-boutique-studio-5-by-sea-n-rent",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T11:58:50.823Z"
+    },
+    "14592": {
+      "name": "The Printhouse Boutique Studio 2",
+      "slug": "the-printhouse-boutique-studio-2",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T11:59:17.235Z"
+    },
+    "14598": {
+      "name": "The Printhouse Downtown Studio 10",
+      "slug": "the-printhouse-downtown-studio-10",
+      "images": 6,
+      "action": "created",
+      "importedAt": "2026-06-07T12:31:11.462Z"
+    },
+    "14604": {
+      "name": "Ramat Hasharon Duplex Rooftop Oasis with Shelter",
+      "slug": "ramat-hasharon-duplex-rooftop-oasis-with-shelter",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T14:57:42.245Z"
+    },
+    "14610": {
+      "name": "Mamad Jaffa Charm Chic Seaview Stay by Sea N' Rent",
+      "slug": "mamad-jaffa-charm-chic-seaview-stay-by-sea-n-rent",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T14:58:12.662Z"
+    },
+    "14611": {
+      "name": "Mamad Bright Apt w Balcony & 10min Walk from Beach",
+      "slug": "mamad-bright-apt-w-balcony-10min-walk-from-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T14:58:37.291Z"
+    },
+    "14613": {
+      "name": "Mamad Deluxe 2BR Apt w Pool in Historical Jaffa",
+      "slug": "mamad-deluxe-2br-apt-w-pool-in-historical-jaffa",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:36:38.890Z"
+    },
+    "14614": {
+      "name": "Mamad Charming Sunny Haven with Balcony",
+      "slug": "mamad-charming-sunny-haven-with-balcony",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:36:58.071Z"
+    },
+    "14616": {
+      "name": "Stylish Apartment with Cozy Vibes",
+      "slug": "stylish-apartment-with-cozy-vibes",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:37:20.022Z"
+    },
+    "14617": {
+      "name": "Luxury 2BR Apt w Balcony 2 min Walk from Beach",
+      "slug": "luxury-2br-apt-w-balcony-2-min-walk-from-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:00:42.846Z"
+    },
+    "14624": {
+      "name": "Mamad Spacious Duplex with Terrace From the Beach",
+      "slug": "mamad-spacious-duplex-with-terrace-from-the-beach",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:37:42.923Z"
+    },
+    "14625": {
+      "name": "Spacious Studio Apt w Sea View 2 min from Beach",
+      "slug": "spacious-studio-apt-w-sea-view-2-min-from-beach",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:38:24.041Z"
+    },
+    "14626": {
+      "name": "Stunning 1BR Apt w Panoramic Sea Views Near Beach",
+      "slug": "stunning-1br-apt-w-panoramic-sea-views-near-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:38:42.963Z"
+    },
+    "14627": {
+      "name": "Beach & Sunset Panorama Apartment",
+      "slug": "beach-sunset-panorama-apartment",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:39:27.881Z"
+    },
+    "14628": {
+      "name": "Stylish 3BR Apt w Balcony 5 min Walk from Beach",
+      "slug": "stylish-3br-apt-w-balcony-5-min-walk-from-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:39:48.783Z"
+    },
+    "14629": {
+      "name": "Stylish Apt w/ Charming Balcony in the Very Center",
+      "slug": "stylish-apt-w-charming-balcony-in-the-very-center",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:40:07.989Z"
+    },
+    "14630": {
+      "name": "Stylish Spacious 3BR Apartment 5min From the Beach",
+      "slug": "stylish-spacious-3br-apartment-5min-from-the-beach",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:40:42.939Z"
+    },
+    "14631": {
+      "name": "The Printhouse Boutique Studio 1",
+      "slug": "the-printhouse-boutique-studio-1",
+      "images": 14,
+      "action": "created",
+      "importedAt": "2026-06-07T16:41:15.397Z"
+    },
+    "14633": {
+      "name": "The Printhouse Boutique Studio 4",
+      "slug": "the-printhouse-boutique-studio-4",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:41:38.003Z"
+    },
+    "14634": {
+      "name": "Mamad Breathtaking 3 BR Apt w Sea View in Central",
+      "slug": "mamad-breathtaking-3-br-apt-w-sea-view-in-central",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:42:10.501Z"
+    },
+    "14636": {
+      "name": "Serene Studio Apt w Balcony Overlooking the Sea",
+      "slug": "serene-studio-apt-w-balcony-overlooking-the-sea",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:42:29.067Z"
+    },
+    "14637": {
+      "name": "Mamad Charming 1BR Apt with Balcony with Mamad",
+      "slug": "mamad-charming-1br-apt-with-balcony-with-mamad",
+      "images": 14,
+      "action": "created",
+      "importedAt": "2026-06-07T16:42:57.943Z"
+    },
+    "14642": {
+      "name": "Chic 2BR Apt w Large Windows in Tel Aviv Old North",
+      "slug": "chic-2br-apt-w-large-windows-in-tel-aviv-old-north",
+      "images": 16,
+      "action": "created",
+      "importedAt": "2026-06-07T16:43:31.774Z"
+    },
+    "14643": {
+      "name": "Bauhaus Sea-Side Garden Haven by Sea N' Rent",
+      "slug": "bauhaus-sea-side-garden-haven-by-sea-n-rent",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:34:04.954Z"
+    },
+    "14646": {
+      "name": "Mamad Elegant Sea-View Apt w Mamad",
+      "slug": "mamad-elegant-sea-view-apt-w-mamad",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:43:57.597Z"
+    },
+    "14648": {
+      "name": "Rustic Charm 2BR Apt in Tel Aviv By Sea N' Rent",
+      "slug": "rustic-charm-2br-apt-in-tel-aviv-by-sea-n-rent",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:34:58.418Z"
+    },
+    "14649": {
+      "name": "Tranquil Garden Retreat",
+      "slug": "tranquil-garden-retreat",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:35:25.754Z"
+    },
+    "14655": {
+      "name": "Mamad Red Sea View Apartment",
+      "slug": "mamad-red-sea-view-apartment",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:35:49.330Z"
+    },
+    "14657": {
+      "name": "Mamad Seabreeze Serenity Haven",
+      "slug": "mamad-seabreeze-serenity-haven",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T16:44:29.987Z"
+    },
+    "14658": {
+      "name": "Mamad Modern Duplex with Sea View",
+      "slug": "mamad-modern-duplex-with-sea-view",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:44:51.957Z"
+    },
+    "14659": {
+      "name": "Mamad Chic 3BR Apt with Balcony, Mamad",
+      "slug": "mamad-chic-3br-apt-with-balcony-mamad",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:45:14.438Z"
+    },
+    "14660": {
+      "name": "Eclectic Dreams Rabin Square Apt",
+      "slug": "eclectic-dreams-rabin-square-apt",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:45:36.703Z"
+    },
+    "14661": {
+      "name": "Ramat Hasharon Chic Peaceful Stay",
+      "slug": "ramat-hasharon-chic-peaceful-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:46:00.941Z"
+    },
+    "14662": {
+      "name": "Mamad Chic Urban Getaway with Balcony",
+      "slug": "mamad-chic-urban-getaway-with-balcony",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:46:21.142Z"
+    },
+    "14663": {
+      "name": "Modern-Rustic Haven in the City",
+      "slug": "modern-rustic-haven-in-the-city",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:46:41.703Z"
+    },
+    "14664": {
+      "name": "Mamad Beachside 2BR",
+      "slug": "mamad-beachside-2br",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:47:00.470Z"
+    },
+    "14665": {
+      "name": "The Pearl of Jaffa Lux Apartment",
+      "slug": "the-pearl-of-jaffa-lux-apartment",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:47:18.214Z"
+    },
+    "14666": {
+      "name": "Cozy Green Oasis 2BR Apt a 3 Min Walk from Beach",
+      "slug": "cozy-green-oasis-2br-apt-a-3-min-walk-from-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:47:35.547Z"
+    },
+    "14667": {
+      "name": "Bright and Charming 1BR Apt w Sea Views Near Shore",
+      "slug": "bright-and-charming-1br-apt-w-sea-views-near-shore",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:47:55.580Z"
+    },
+    "14668": {
+      "name": "Modern & Bright 3BR Apt with View",
+      "slug": "modern-bright-3br-apt-with-view",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:48:25.030Z"
+    },
+    "14669": {
+      "name": "Spacious & Modern 3BD Apt",
+      "slug": "spacious-modern-3bd-apt",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:48:48.876Z"
+    },
+    "14670": {
+      "name": "Spacious 1BR w Panoramic Sea View",
+      "slug": "spacious-1br-w-panoramic-sea-view",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T16:49:20.815Z"
+    },
+    "14671": {
+      "name": "Luxury 2BR Apt w Balcony & Beach View",
+      "slug": "luxury-2br-apt-w-balcony-beach-view",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:42:19.707Z"
+    },
+    "14672": {
+      "name": "Magnificent Sea-View Panorama Apt",
+      "slug": "magnificent-sea-view-panorama-apt",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:49:39.726Z"
+    },
+    "14673": {
+      "name": "Luxurious 2BR w/ Panoramic Sea View",
+      "slug": "luxurious-2br-w-panoramic-sea-view",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:49:57.757Z"
+    },
+    "14674": {
+      "name": "Stylish Apt w Skyline View Balcony",
+      "slug": "stylish-apt-w-skyline-view-balcony",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:51:14.989Z"
+    },
+    "14679": {
+      "name": "Spacious 3BR Penthouse w Rooftop 7 min from Beach",
+      "slug": "spacious-3br-penthouse-w-rooftop-7-min-from-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:01:42.986Z"
+    },
+    "14680": {
+      "name": "Modern and Vibrant 2BR apt with Private Balcony",
+      "slug": "modern-and-vibrant-2br-apt-with-private-balcony",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:02:04.483Z"
+    },
+    "14684": {
+      "name": "Country Style Apt 2min from Beach by Sea N Rent",
+      "slug": "country-style-apt-2min-from-beach-by-sea-n-rent",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:45:17.738Z"
+    },
+    "14686": {
+      "name": "Relaxing 2 BR Apt with Parking",
+      "slug": "relaxing-2-br-apt-with-parking",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T14:55:53.893Z"
+    },
+    "14695": {
+      "name": "Serene Retreat with Lush Garden",
+      "slug": "serene-retreat-with-lush-garden",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T14:56:23.201Z"
+    },
+    "14696": {
+      "name": "Cozy 3BR Apt w Big Windows 5 Min Walk From Beach",
+      "slug": "cozy-3br-apt-w-big-windows-5-min-walk-from-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T14:56:46.885Z"
+    },
+    "14697": {
+      "name": "Spacious & Green 3BR Apt w Balcony in City Center",
+      "slug": "spacious-green-3br-apt-w-balcony-in-city-center",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:45:43.132Z"
+    },
+    "14699": {
+      "name": "Country Vibes in North Tel-Aviv",
+      "slug": "country-vibes-in-north-tel-aviv",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:46:03.871Z"
+    },
+    "14700": {
+      "name": "Modern Studio Apt with Balcony",
+      "slug": "modern-studio-apt-with-balcony",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:46:27.778Z"
+    },
+    "14704": {
+      "name": "Green Oasis in Tel Aviv's Old North",
+      "slug": "green-oasis-in-tel-aviv-s-old-north",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:46:45.431Z"
+    },
+    "14706": {
+      "name": "Spacious & Bright 3BR Apartment",
+      "slug": "spacious-bright-3br-apartment",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:47:03.562Z"
+    },
+    "14708": {
+      "name": "Skyline 1BR Apartment with City and Sea View",
+      "slug": "skyline-1br-apartment-with-city-and-sea-view",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T14:58:59.165Z"
+    },
+    "14711": {
+      "name": "Mamad Talpiot Market Vista apartment",
+      "slug": "mamad-talpiot-market-vista-apartment",
+      "images": 14,
+      "action": "created",
+      "importedAt": "2026-06-07T14:59:24.700Z"
+    },
+    "14712": {
+      "name": "Mamad Louis Promenade Vista apartment",
+      "slug": "mamad-louis-promenade-vista-apartment",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T14:59:54.065Z"
+    },
+    "14713": {
+      "name": "Mamad Port Views Vista apartment",
+      "slug": "mamad-port-views-vista-apartment",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:00:18.334Z"
+    },
+    "14715": {
+      "name": "Stylish Seaside Escape with Balcony",
+      "slug": "stylish-seaside-escape-with-balcony",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T15:47:33.340Z"
+    },
+    "14716": {
+      "name": "Magnificent Seaside Panorama Stay",
+      "slug": "magnificent-seaside-panorama-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:02:24.417Z"
+    },
+    "14720": {
+      "name": "City Escape with Homey Vibes",
+      "slug": "city-escape-with-homey-vibes",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:02:46.861Z"
+    },
+    "14722": {
+      "name": "Ben Yehuda Elegant City Retreat",
+      "slug": "ben-yehuda-elegant-city-retreat",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:03:09.235Z"
+    },
+    "14723": {
+      "name": "Mamad Modern Cozy Dream Apartment",
+      "slug": "mamad-modern-cozy-dream-apartment",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:03:36.461Z"
+    },
+    "14726": {
+      "name": "Urban Luxe Apartment - Central TLV",
+      "slug": "urban-luxe-apartment-central-tlv",
+      "images": 13,
+      "action": "created",
+      "importedAt": "2026-06-07T17:03:57.852Z"
+    },
+    "14727": {
+      "name": "Mamad Bahai Gardens Serenity Apartment",
+      "slug": "mamad-bahai-gardens-serenity-apartment",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T15:27:12.053Z"
+    },
+    "14730": {
+      "name": "Homey Studio Apt with Prime Location in Tel Aviv",
+      "slug": "homey-studio-apt-with-prime-location-in-tel-aviv",
+      "images": 11,
+      "action": "created",
+      "importedAt": "2026-06-07T15:27:34.922Z"
+    },
+    "14731": {
+      "name": "Studio apt w balcony and Kitchen",
+      "slug": "studio-apt-w-balcony-and-kitchen",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T15:27:55.519Z"
+    },
+    "14733": {
+      "name": "Charming 1BR Apt Near Expo & Univ TelAviv",
+      "slug": "charming-1br-apt-near-expo-univ-telaviv",
+      "images": 12,
+      "action": "created",
+      "importedAt": "2026-06-07T15:28:10.949Z"
+    },
+    "14734": {
+      "name": "One BR Apt TLV TAU by SeaNRent",
+      "slug": "one-br-apt-tlv-tau-by-seanrent",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:28:35.069Z"
+    },
+    "14735": {
+      "name": "Double room BUILDING C",
+      "slug": "double-room-building-c",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:28:58.971Z"
+    },
+    "14736": {
+      "name": "Mamad Sheinkin Chic & Comfort City Stay",
+      "slug": "mamad-sheinkin-chic-comfort-city-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:29:22.831Z"
+    },
+    "14737": {
+      "name": "The Heart of Tel Aviv Elegant Home",
+      "slug": "the-heart-of-tel-aviv-elegant-home",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:29:45.996Z"
+    },
+    "14739": {
+      "name": "The Stone-age Palace in Caesarea",
+      "slug": "the-stone-age-palace-in-caesarea",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:30:12.017Z"
+    },
+    "14740": {
+      "name": "Chic Bright Urban Escape",
+      "slug": "chic-bright-urban-escape",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:30:47.345Z"
+    },
+    "14745": {
+      "name": "Tranquil Stay Near the Beach",
+      "slug": "tranquil-stay-near-the-beach",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:04:20.081Z"
+    },
+    "14749": {
+      "name": "Herzliya Seaside Charming Home",
+      "slug": "herzliya-seaside-charming-home",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:31:34.835Z"
+    },
+    "14769": {
+      "name": "Solo Studio",
+      "slug": "solo-studio",
+      "images": 13,
+      "action": "created",
+      "importedAt": "2026-06-07T15:31:50.702Z"
+    },
+    "15108": {
+      "name": "Royal Park Resort 11",
+      "slug": "royal-park-resort-11",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T15:32:25.567Z"
+    },
+    "15109": {
+      "name": "Royal Park Resort Studio 14",
+      "slug": "royal-park-resort-studio-14",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:32:51.144Z"
+    },
+    "15110": {
+      "name": "Royal Park Resort Studio 23",
+      "slug": "royal-park-resort-studio-23",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:33:16.210Z"
+    },
+    "15111": {
+      "name": "Royal Park Resort Studio 53",
+      "slug": "royal-park-resort-studio-53",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:33:40.855Z"
+    },
+    "15112": {
+      "name": "Studio 56 Royal Park Resort",
+      "slug": "studio-56-royal-park-resort",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:47:57.821Z"
+    },
+    "15114": {
+      "name": "Royal Park Resort Apartment 55",
+      "slug": "royal-park-resort-apartment-55",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T15:34:33.984Z"
+    },
+    "15115": {
+      "name": "Royal Park Resort Apartment 22",
+      "slug": "royal-park-resort-apartment-22",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T15:48:30.949Z"
+    },
+    "15116": {
+      "name": "Royal Park Resort Apartment 44",
+      "slug": "royal-park-resort-apartment-44",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T15:49:05.820Z"
+    },
+    "15117": {
+      "name": "Royal Park Resort Apartment 114",
+      "slug": "royal-park-resort-apartment-114",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:49:23.868Z"
+    },
+    "15118": {
+      "name": "Royal Park Resort Apartment 74",
+      "slug": "royal-park-resort-apartment-74",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:36:11.075Z"
+    },
+    "15120": {
+      "name": "Royal Park Resort Apartment 106",
+      "slug": "royal-park-resort-apartment-106",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T15:36:40.700Z"
+    },
+    "15121": {
+      "name": "Royal Park Resort Apartment 28",
+      "slug": "royal-park-resort-apartment-28",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T15:37:10.720Z"
+    },
+    "15126": {
+      "name": "Royal Park Resort Apartment 66",
+      "slug": "royal-park-resort-apartment-66",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T15:37:39.743Z"
+    },
+    "15127": {
+      "name": "Royal Park Resort Apartment 98",
+      "slug": "royal-park-resort-apartment-98",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:38:01.898Z"
+    },
+    "15128": {
+      "name": "Royal Park Resort Apartment 85",
+      "slug": "royal-park-resort-apartment-85",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:38:24.445Z"
+    },
+    "15129": {
+      "name": "Royal Park Resort Apartment 119",
+      "slug": "royal-park-resort-apartment-119",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:38:48.068Z"
+    },
+    "15177": {
+      "name": "HaYarkon Park Cozy & Charming Stay",
+      "slug": "hayarkon-park-cozy-charming-stay-2",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:39:10.620Z"
+    },
+    "15365": {
+      "name": "Mamad Achziv Seaside Stylish Stay",
+      "slug": "mamad-achziv-seaside-stylish-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:39:46.583Z"
+    },
+    "15425": {
+      "name": "Royal Park Resort Apartment 113",
+      "slug": "royal-park-resort-apartment-113",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:40:09.591Z"
+    },
+    "15794": {
+      "name": "Netanya Beach & Pool Comfort Stay",
+      "slug": "netanya-beach-pool-comfort-stay",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T15:40:36.370Z"
+    },
+    "15795": {
+      "name": "Netanya Beach & Pool Elegant Stay",
+      "slug": "netanya-beach-pool-elegant-stay",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T15:41:08.003Z"
+    },
+    "15796": {
+      "name": "Netanya Beach & Pool Elegant Studio",
+      "slug": "netanya-beach-pool-elegant-studio",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:41:32.463Z"
+    },
+    "15797": {
+      "name": "Netanya Beach & Pool Chic Studio",
+      "slug": "netanya-beach-pool-chic-studio",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:41:55.552Z"
+    },
+    "15798": {
+      "name": "Netanya Beach & Pool Cozy Studio",
+      "slug": "netanya-beach-pool-cozy-studio",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:49:43.515Z"
+    },
+    "15813": {
+      "name": "Historic & Modern Home with Garden",
+      "slug": "historic-modern-home-with-garden",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:42:55.052Z"
+    },
+    "15927": {
+      "name": "Samui Paradise Poolside Villa",
+      "slug": "samui-paradise-poolside-villa",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T15:43:27.294Z"
+    },
+    "15928": {
+      "name": "Koh Phangan Zen Paradise Pool Villa",
+      "slug": "koh-phangan-zen-paradise-pool-villa",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:04:37.800Z"
+    },
+    "15986": {
+      "name": "The Gem of Neve Tzedek Stylish Home",
+      "slug": "the-gem-of-neve-tzedek-stylish-home",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:04:53.666Z"
+    },
+    "16743": {
+      "name": "Red Canyon Spa Serene Stay",
+      "slug": "red-canyon-spa-serene-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:05:22.647Z"
+    },
+    "16988": {
+      "name": "Jaffa Charming Beachfront Studio",
+      "slug": "jaffa-charming-beachfront-studio",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:51:43.214Z"
+    },
+    "16995": {
+      "name": "Poleg Beach Seaview Stylish Stay by Sea N' Rent",
+      "slug": "poleg-beach-seaview-stylish-stay-by-sea-n-rent",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:52:15.992Z"
+    },
+    "17316": {
+      "name": "Tropical Peaceful Poolside Retreat",
+      "slug": "tropical-peaceful-poolside-retreat",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:05:51.963Z"
+    },
+    "17513": {
+      "name": "Netanya Beachfront & Pool Retreat",
+      "slug": "netanya-beachfront-pool-retreat",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T17:06:40.965Z"
+    },
+    "17979": {
+      "name": "Tel Aviv Uni Smart & Cozy Stay",
+      "slug": "tel-aviv-uni-smart-cozy-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:53:38.865Z"
+    },
+    "18031": {
+      "name": "Gesher Haziv Peaceful Modern Stay",
+      "slug": "gesher-haziv-peaceful-modern-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:54:14.158Z"
+    },
+    "18123": {
+      "name": "Mamad Rosh HaNikra Garden Villa Retreat",
+      "slug": "mamad-rosh-hanikra-garden-villa-retreat",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:54:45.811Z"
+    },
+    "18159": {
+      "name": "Haifa Beachside Cozy Studio",
+      "slug": "haifa-beachside-cozy-studio",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T15:55:27.078Z"
+    },
+    "18160": {
+      "name": "Haifa Beachside Chic Stay",
+      "slug": "haifa-beachside-chic-stay",
+      "images": 16,
+      "action": "created",
+      "importedAt": "2026-06-07T15:56:20.865Z"
+    },
+    "18161": {
+      "name": "Haifa Beachside Homey Stay",
+      "slug": "haifa-beachside-homey-stay",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T15:57:11.652Z"
+    },
+    "18279": {
+      "name": "Mamad Achziv Stylish Beach Haven",
+      "slug": "mamad-achziv-stylish-beach-haven",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T15:58:01.028Z"
+    },
+    "18307": {
+      "name": "Mamad Keshet Eilon Galilee View Suites",
+      "slug": "mamad-keshet-eilon-galilee-view-suites",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:52:46.645Z"
+    },
+    "18308": {
+      "name": "Mamad Keshet Eilon Panoramic View Suites",
+      "slug": "mamad-keshet-eilon-panoramic-view-suites",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:54:01.400Z"
+    },
+    "18332": {
+      "name": "Mamad Keshet Eilon Peaceful Garden Villas",
+      "slug": "mamad-keshet-eilon-peaceful-garden-villas",
+      "images": 16,
+      "action": "created",
+      "importedAt": "2026-06-07T16:00:20.843Z"
+    },
+    "18427": {
+      "name": "Royal Park Resort Apartment 58",
+      "slug": "royal-park-resort-apartment-58",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T16:55:13.441Z"
+    },
+    "18442": {
+      "name": "Red Canyon Spa Peaceful Stay",
+      "slug": "red-canyon-spa-peaceful-stay",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T16:56:19.727Z"
+    },
+    "18450": {
+      "name": "Soultani 12 Cozy Stay",
+      "slug": "soultani-12-cozy-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:01:48.121Z"
+    },
+    "18451": {
+      "name": "Soultani 12 Chic Stay",
+      "slug": "soultani-12-chic-stay",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T15:58:43.546Z"
+    },
+    "18452": {
+      "name": "Soultani 12 Sleek Stay",
+      "slug": "soultani-12-sleek-stay",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T15:59:28.587Z"
+    },
+    "18453": {
+      "name": "Soultani 12 Stylish Loft",
+      "slug": "soultani-12-stylish-loft",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:02:14.396Z"
+    },
+    "18492": {
+      "name": "Talpiot Market Stylish Patio Duplex",
+      "slug": "talpiot-market-stylish-patio-duplex",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:00:49.940Z"
+    },
+    "18942": {
+      "name": "Soultani 12 Elegant Stay",
+      "slug": "soultani-12-elegant-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:01:21.970Z"
+    },
+    "18943": {
+      "name": "Soultani 12 Stylish Stay",
+      "slug": "soultani-12-stylish-stay",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T16:03:07.165Z"
+    },
+    "18944": {
+      "name": "Soultani 12 Charming Stay",
+      "slug": "soultani-12-charming-stay",
+      "images": 13,
+      "action": "created",
+      "importedAt": "2026-06-07T16:03:54.951Z"
+    },
+    "19140": {
+      "name": "Central & Bright Designer Getaway",
+      "slug": "central-bright-designer-getaway",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:04:41.093Z"
+    },
+    "19361": {
+      "name": "Coconut WayWay Paradise Retreat",
+      "slug": "coconut-wayway-paradise-retreat",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:05:11.853Z"
+    },
+    "19518": {
+      "name": "Historical 2 bedrooms home with a Private Jacuzzi",
+      "slug": "historical-2-bedrooms-home-with-a-private-jacuzzi",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:05:50.607Z"
+    },
+    "19598": {
+      "name": "Tel Aviv Beachfront Bliss",
+      "slug": "tel-aviv-beachfront-bliss",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:57:48.258Z"
+    },
+    "19599": {
+      "name": "Gordon Beach Bright Spacious Stay",
+      "slug": "gordon-beach-bright-spacious-stay",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:59:12.963Z"
+    },
+    "19669": {
+      "name": "Wok Tum Sunset Paradise Villa",
+      "slug": "wok-tum-sunset-paradise-villa",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:06:44.391Z"
+    },
+    "19959": {
+      "name": "Lush Garden  Oasis..",
+      "slug": "lush-garden-oasis",
+      "images": 14,
+      "action": "created",
+      "importedAt": "2026-06-07T16:07:25.890Z"
+    },
+    "20116": {
+      "name": "Mamad Sunny Hilltop Hideaway",
+      "slug": "mamad-sunny-hilltop-hideaway",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T16:08:03.445Z"
+    },
+    "20292": {
+      "name": "Sea View Penthouse in Eilat",
+      "slug": "sea-view-penthouse-in-eilat",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T16:08:53.355Z"
+    },
+    "20301": {
+      "name": "Modern Sea View Escape",
+      "slug": "modern-sea-view-escape",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T16:09:33.552Z"
+    },
+    "20304": {
+      "name": "Serene Beachfront Escape",
+      "slug": "serene-beachfront-escape",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:10:21.608Z"
+    },
+    "20939": {
+      "name": "Mamad Sunny Rooftop Poolside Apt Panoramic Views",
+      "slug": "mamad-sunny-rooftop-poolside-apt-panoramic-views",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T16:11:05.188Z"
+    },
+    "20944": {
+      "name": "Dreamy Jungle Villa.",
+      "slug": "dreamy-jungle-villa",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T16:11:53.372Z"
+    },
+    "20945": {
+      "name": "Dreamy Jungle view villa",
+      "slug": "dreamy-jungle-view-villa",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:12:40.923Z"
+    },
+    "20950": {
+      "name": "Mamad Modern Garden Apartment in Eilat Promenade",
+      "slug": "mamad-modern-garden-apartment-in-eilat-promenade",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:13:23.873Z"
+    },
+    "21135": {
+      "name": "Dreamy Ocean Villa C",
+      "slug": "dreamy-ocean-villa-c",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:14:13.529Z"
+    },
+    "21137": {
+      "name": "Dreamy Ocean Villa D",
+      "slug": "dreamy-ocean-villa-d-2",
+      "images": 20,
+      "action": "updated",
+      "importedAt": "2026-06-07T16:14:54.274Z"
+    },
+    "21138": {
+      "name": "Dreamy Ocean Villa E",
+      "slug": "dreamy-ocean-villa-e",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:15:51.739Z"
+    },
+    "21139": {
+      "name": "Treetop Bliss Villas",
+      "slug": "treetop-bliss-villas",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:16:36.682Z"
+    },
+    "22435": {
+      "name": "Siam Serenity Villa.",
+      "slug": "siam-serenity-villa",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T16:17:15.337Z"
+    },
+    "22550": {
+      "name": "Coastal Panorama Apartment",
+      "slug": "coastal-panorama-apartment",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T16:17:54.154Z"
+    },
+    "22552": {
+      "name": "Cozy 1-Bedroom Retreat in Tel Aviv",
+      "slug": "cozy-1-bedroom-retreat-in-tel-aviv",
+      "images": 18,
+      "action": "created",
+      "importedAt": "2026-06-07T16:18:29.295Z"
+    },
+    "22584": {
+      "name": "Spacious 4BD House w Pool in the Heart of Herzliya",
+      "slug": "spacious-4bd-house-w-pool-in-the-heart-of-herzliya",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:19:05.128Z"
+    },
+    "22604": {
+      "name": "Mamad Eilat Modern Stay Spacious Coastal  Retreat",
+      "slug": "mamad-eilat-modern-stay-spacious-coastal-retreat",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:20:00.395Z"
+    },
+    "22645": {
+      "name": "Baan Sook Villa Bright Private Pool",
+      "slug": "baan-sook-villa-bright-private-pool",
+      "images": 17,
+      "action": "created",
+      "importedAt": "2026-06-07T16:20:59.704Z"
+    },
+    "23441": {
+      "name": "Sunlit Desert View Modern Retreat by Sea N Rent",
+      "slug": "sunlit-desert-view-modern-retreat-by-sea-n-rent",
+      "images": 10,
+      "action": "created",
+      "importedAt": "2026-06-07T16:22:04.658Z"
+    },
+    "23452": {
+      "name": "Soft colors  Desert View Hideaway",
+      "slug": "soft-colors-desert-view-hideaway",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T16:23:18.579Z"
+    },
+    "23465": {
+      "name": "Light Filled Modern Eilat Getaway by Sea N Rent",
+      "slug": "light-filled-modern-eilat-getaway-by-sea-n-rent",
+      "images": 16,
+      "action": "created",
+      "importedAt": "2026-06-07T16:24:53.245Z"
+    },
+    "23748": {
+      "name": "Garden& Rooftop Beachfront Luxury in Shavei Tzion",
+      "slug": "garden-rooftop-beachfront-luxury-in-shavei-tzion",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:26:19.251Z"
+    },
+    "23749": {
+      "name": "Mamad Chic and Comfort stay on Iconic Sheinkin St",
+      "slug": "mamad-chic-and-comfort-stay-on-iconic-sheinkin-st",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:26:57.744Z"
+    },
+    "23763": {
+      "name": "Mamad Bright Eilat escape with balcony and pool",
+      "slug": "mamad-bright-eilat-escape-with-balcony-and-pool",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:27:49.965Z"
+    },
+    "23865": {
+      "name": "Beachfront Apartment with Balcony and Rooftop Pool",
+      "slug": "beachfront-apartment-with-balcony-and-rooftop-pool",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:29:36.291Z"
+    },
+    "23867": {
+      "name": "Unique Modern Villa in Shavei Tzion | Pool",
+      "slug": "unique-modern-villa-in-shavei-tzion-pool",
+      "images": 19,
+      "action": "created",
+      "importedAt": "2026-06-07T16:32:00.340Z"
+    },
+    "24930": {
+      "name": "Modern Designed Gem by Haifa Beach",
+      "slug": "modern-designed-gem-by-haifa-beach",
+      "images": 15,
+      "action": "created",
+      "importedAt": "2026-06-07T16:33:01.366Z"
+    },
+    "25049": {
+      "name": "Mamad City Rail Pulse: Modern Design w Balcony",
+      "slug": "mamad-city-rail-pulse-modern-design-w-balcony",
+      "images": 20,
+      "action": "created",
+      "importedAt": "2026-06-07T16:33:39.211Z"
+    }
+  },
+  "failed": {},
+  "lastListingId": 17513,
+  "stats": {
+    "ok": 190,
+    "fail": 0,
+    "skipped": 186
+  },
+  "updatedAt": "2026-06-07T17:06:40.965Z"
+}

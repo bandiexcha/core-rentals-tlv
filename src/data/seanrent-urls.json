@@ -1,0 +1,1243 @@
+{
+  "discoveredAt": "2026-06-07T17:06:46.763Z",
+  "source": "incremental-discovery-store",
+  "count": 6,
+  "stats": {
+    "candidates": 199,
+    "validated": 6,
+    "rejected": 0,
+    "properties": 199
+  },
+  "progress": {
+    "bookingsboom": {
+      "sessionId": "od29wm30ufj",
+      "updatedAt": "2026-06-07T17:01:28.518Z",
+      "lastPage": 2,
+      "lastListingId": 25049,
+      "savedCount": 199,
+      "totalCount": 199,
+      "complete": true
+    },
+    "import-bookingsboom": {
+      "lastListingId": 17513,
+      "importedCount": 190,
+      "pendingCount": 0,
+      "updatedAt": "2026-06-07T17:06:46.763Z",
+      "complete": true
+    }
+  },
+  "urls": [
+    "https://www.booking.com/hotel/il/beachfront-apartments-tel-aviv.html",
+    "https://www.booking.com/hotel/il/hacarmel-market-vibrat-apartment-by-sea-n-rent.html",
+    "https://www.booking.com/hotel/il/hayarkon-park-cozy-and-charming-stay-by-sea-n-rent.html",
+    "https://www.booking.com/hotel/il/modern-amp-bright-3br-apt-by-sea-n-rent.html",
+    "https://www.booking.com/hotel/il/quiet-street-in-a-super-central-location-classic-apt.html",
+    "https://www.booking.com/hotel/il/sea-n-39-rent-ramat-aviv.html"
+  ],
+  "bookingCom": [
+    "https://www.booking.com/hotel/il/beachfront-apartments-tel-aviv.html",
+    "https://www.booking.com/hotel/il/hacarmel-market-vibrat-apartment-by-sea-n-rent.html",
+    "https://www.booking.com/hotel/il/hayarkon-park-cozy-and-charming-stay-by-sea-n-rent.html",
+    "https://www.booking.com/hotel/il/modern-amp-bright-3br-apt-by-sea-n-rent.html",
+    "https://www.booking.com/hotel/il/quiet-street-in-a-super-central-location-classic-apt.html",
+    "https://www.booking.com/hotel/il/sea-n-39-rent-ramat-aviv.html"
+  ],
+  "bookingsBoom": [
+    {
+      "id": 14475,
+      "nickname": "Demo",
+      "address": "Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14475"
+    },
+    {
+      "id": 14556,
+      "nickname": "Shilo 1 Tel Aviv #471",
+      "address": "Shilo Street 1 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14556"
+    },
+    {
+      "id": 14557,
+      "nickname": "Trumpeldor 1 Apt 43 Tel Aviv #458",
+      "address": "Retsif Herbert Samuel Street פינת, Trumpeldor Street 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14557"
+    },
+    {
+      "id": 14558,
+      "nickname": "HaYarkon 78 Apt 166 Tel Aviv #467",
+      "address": "HaYarkon Street 78 166",
+      "url": "https://seanrent.bookingsboom.com/listings/14558"
+    },
+    {
+      "id": 14559,
+      "nickname": "HaHashmonaim 100 Apt 1028 Tel Aviv #461",
+      "address": "HaHashmonaim Street 100 Tower 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14559"
+    },
+    {
+      "id": 14564,
+      "nickname": "Medinat HaYehudim 12 Apt 23 Herzliya #288",
+      "address": "Medinat ha-Yehudim Street 12",
+      "url": "https://seanrent.bookingsboom.com/listings/14564"
+    },
+    {
+      "id": 14565,
+      "nickname": "Ahad Ha'Am St 32 Apt 14 Tel Aviv #855",
+      "address": "Ahad Ha'Am Street 32 Apt 14",
+      "url": "https://seanrent.bookingsboom.com/listings/14565"
+    },
+    {
+      "id": 14566,
+      "nickname": "Sderot Nitsa 8 Apt 94 Netanya #678",
+      "address": "Nitsa Boulevard 8",
+      "url": "https://seanrent.bookingsboom.com/listings/14566"
+    },
+    {
+      "id": 14567,
+      "nickname": "Moshe Sneh 34 St Apt 1 Netanya #796",
+      "address": "Moshe Sneh Street 34 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14567"
+    },
+    {
+      "id": 14568,
+      "nickname": "Bialik Street 10 Apt 27 Netanya #749",
+      "address": "Bialik Street 10",
+      "url": "https://seanrent.bookingsboom.com/listings/14568"
+    },
+    {
+      "id": 14573,
+      "nickname": "Lohamei HaGeta'ot St 41 Apt 5 Haifa #768",
+      "address": "Lokhamei ha-Geta'ot Street 41",
+      "url": "https://seanrent.bookingsboom.com/listings/14573"
+    },
+    {
+      "id": 14574,
+      "nickname": "Lohamei HaGeta'ot St 41 Apt 6 Haifa #770",
+      "address": "Lokhamei ha-Geta'ot St 41, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14574"
+    },
+    {
+      "id": 14575,
+      "nickname": "Achziv 11 Hamaagan no. 1 Nahariya #531",
+      "address": "Hamaagan 11 Apt 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14575"
+    },
+    {
+      "id": 14578,
+      "nickname": "Haaliya 75 apt 948 Nahariya #554",
+      "address": "Ha-Aliya Street 75",
+      "url": "https://seanrent.bookingsboom.com/listings/14578"
+    },
+    {
+      "id": 14580,
+      "nickname": "Almog 12 Apt 22 Nahariya #677",
+      "address": "רחוב אלמוג 12",
+      "url": "https://seanrent.bookingsboom.com/listings/14580"
+    },
+    {
+      "id": 14584,
+      "nickname": "Pevzner 30 Haifa #656",
+      "address": "Pevzner Street 30 Haifa",
+      "url": "https://seanrent.bookingsboom.com/listings/14584"
+    },
+    {
+      "id": 14585,
+      "nickname": "Moshe Aharon 1 Apt 7 Haifa #704",
+      "address": "Moshe Aharon Street 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14585"
+    },
+    {
+      "id": 14586,
+      "nickname": "Moshe Aharon 1 Apt 8 Haifa #697",
+      "address": "Moshe Aharon Street 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14586"
+    },
+    {
+      "id": 14587,
+      "nickname": "Moshe Aharon 1 Apt 9 Haifa #705",
+      "address": "Moshe Aharon Street 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14587"
+    },
+    {
+      "id": 14588,
+      "nickname": "Moshe Aharon 1 Apt 6 Haifa #703",
+      "address": "Moshe Aharon Street 1 Apt 6",
+      "url": "https://seanrent.bookingsboom.com/listings/14588"
+    },
+    {
+      "id": 14589,
+      "nickname": "Achziv 6 Dugit - No.12 Nahariya #478",
+      "address": "דוגית 6, Nahariya, 22311, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14589"
+    },
+    {
+      "id": 14590,
+      "nickname": "66 Shivat Tsiyon St Apt 3 Haifa #686",
+      "address": "Shivat Tsiyon Street 66",
+      "url": "https://seanrent.bookingsboom.com/listings/14590"
+    },
+    {
+      "id": 14591,
+      "nickname": "Moshe Aharon 1 Apt 5 Haifa #702",
+      "address": "Moshe Aharon Street 1 Apt 5",
+      "url": "https://seanrent.bookingsboom.com/listings/14591"
+    },
+    {
+      "id": 14592,
+      "nickname": "Moshe Aharon 1 Apt 2 Haifa #699",
+      "address": "Moshe Aharon Street 1 Apt 2",
+      "url": "https://seanrent.bookingsboom.com/listings/14592"
+    },
+    {
+      "id": 14598,
+      "nickname": "Moshe Aharon 1 Apt 10 Haifa #682",
+      "address": "Moshe Aharon Street 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14598"
+    },
+    {
+      "id": 14603,
+      "nickname": "Shlomo HaMelekh St 87 Apt 5 Tel Aviv #885",
+      "address": "Shlomo HaMelekh St 87, apt 5, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14603"
+    },
+    {
+      "id": 14604,
+      "nickname": "Azar St 41 Apt 5 Ramat Hasharon #933",
+      "address": "Azar St 41, apt 5, Ramat Hasharon, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14604"
+    },
+    {
+      "id": 14610,
+      "nickname": "Russlan 14 Apt 5 Tel Aviv #138",
+      "address": "Russlan Street 14",
+      "url": "https://seanrent.bookingsboom.com/listings/14610"
+    },
+    {
+      "id": 14611,
+      "nickname": "Ben Yehuda 204 Apt 10 Tel Aviv #133",
+      "address": "Ben Yehuda Street 204",
+      "url": "https://seanrent.bookingsboom.com/listings/14611"
+    },
+    {
+      "id": 14613,
+      "nickname": "3 Louis Pasteur St Apt 18 Tel Aviv",
+      "address": "Louis Pasteur St 3, apt 18, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14613"
+    },
+    {
+      "id": 14614,
+      "nickname": "Pines 19 Tel Aviv #91",
+      "address": "Pines Street 19",
+      "url": "https://seanrent.bookingsboom.com/listings/14614"
+    },
+    {
+      "id": 14616,
+      "nickname": "Arlozorov 8 Tel Aviv #167",
+      "address": "Arlozorov Street 8",
+      "url": "https://seanrent.bookingsboom.com/listings/14616"
+    },
+    {
+      "id": 14617,
+      "nickname": "HaYarkon 78 Apt 178 Tel Aviv #152",
+      "address": "HaYarkon Street 78 Isrotel",
+      "url": "https://seanrent.bookingsboom.com/listings/14617"
+    },
+    {
+      "id": 14619,
+      "nickname": "Hirschenberg 14 (B) Apt. 6 Tel Aviv #303",
+      "address": "Hirschenberg Street 14",
+      "url": "https://seanrent.bookingsboom.com/listings/14619"
+    },
+    {
+      "id": 14621,
+      "nickname": "Levi Eshkol 57B Tel Aviv #164",
+      "address": "Sderot Levi Eshkol 57",
+      "url": "https://seanrent.bookingsboom.com/listings/14621"
+    },
+    {
+      "id": 14622,
+      "nickname": "Shderot bialik 23 Ramat hasharon #156",
+      "address": "Sderot Bialik 23",
+      "url": "https://seanrent.bookingsboom.com/listings/14622"
+    },
+    {
+      "id": 14623,
+      "nickname": "HaYarkon 78 Apt 162 Tel Aviv #287",
+      "address": "HaYarkon Street 78 162",
+      "url": "https://seanrent.bookingsboom.com/listings/14623"
+    },
+    {
+      "id": 14624,
+      "nickname": "Ben Yehuda 18 Tel Aviv #120",
+      "address": "Ben Yehuda Street 18",
+      "url": "https://seanrent.bookingsboom.com/listings/14624"
+    },
+    {
+      "id": 14625,
+      "nickname": "HaYarkon 78 Apt 174 Tel Aviv #93",
+      "address": "78 Ha-Yarkon St.",
+      "url": "https://seanrent.bookingsboom.com/listings/14625"
+    },
+    {
+      "id": 14626,
+      "nickname": "HaYarkon 78 Apt 202 Tel Aviv #174",
+      "address": "HaYarkon Street 78",
+      "url": "https://seanrent.bookingsboom.com/listings/14626"
+    },
+    {
+      "id": 14627,
+      "nickname": "HaYarkon 67 Apt 11 Tel Aviv #94",
+      "address": "67 Ha-Yarkon Street",
+      "url": "https://seanrent.bookingsboom.com/listings/14627"
+    },
+    {
+      "id": 14628,
+      "nickname": "Dizengoff 132 Apt 5 Tel Aviv #289",
+      "address": "Dizengoff Street 132",
+      "url": "https://seanrent.bookingsboom.com/listings/14628"
+    },
+    {
+      "id": 14629,
+      "nickname": "Gordon 83 Back Apt 13 Tel Aviv #96",
+      "address": "J. L. Gordon Street 83",
+      "url": "https://seanrent.bookingsboom.com/listings/14629"
+    },
+    {
+      "id": 14630,
+      "nickname": "Hayarkon 185 Apt 3 Back - Tel Aviv #149",
+      "address": "HaYarkon Street 185",
+      "url": "https://seanrent.bookingsboom.com/listings/14630"
+    },
+    {
+      "id": 14631,
+      "nickname": "Moshe Aharon 1 Apt 1 Haifa #698",
+      "address": "Moshe Aharon St 1, apt 1, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14631"
+    },
+    {
+      "id": 14632,
+      "nickname": "Moshe Aharon 1 Apt 3 Haifa #700",
+      "address": "Moshe Aharon St 1, apt 3, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14632"
+    },
+    {
+      "id": 14633,
+      "nickname": "Moshe Aharon 1 Apt 4 Haifa #701",
+      "address": "Moshe Aharon St 1, apt 4, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14633"
+    },
+    {
+      "id": 14634,
+      "nickname": "Louis Pasteur St 3 Apt 12 Tel Aviv",
+      "address": "Louis Pasteur Street 3",
+      "url": "https://seanrent.bookingsboom.com/listings/14634"
+    },
+    {
+      "id": 14636,
+      "nickname": "52 Yehuda Margoza Apt 38 Tel Aviv #575",
+      "address": "Yehuda Margoza Street 52",
+      "url": "https://seanrent.bookingsboom.com/listings/14636"
+    },
+    {
+      "id": 14637,
+      "nickname": "Allenby 73 Apt 12 Tel Aviv #441",
+      "address": "Allenby Street 73",
+      "url": "https://seanrent.bookingsboom.com/listings/14637"
+    },
+    {
+      "id": 14642,
+      "nickname": "Beeri 21 Apt 6 Tel Aviv #617",
+      "address": "Be'eri Street 21",
+      "url": "https://seanrent.bookingsboom.com/listings/14642"
+    },
+    {
+      "id": 14643,
+      "nickname": "Ben Yehuda 218 Apt 1 Tel Aviv #844",
+      "address": "Ben Yehuda Street 218 Apt 1",
+      "url": "https://seanrent.bookingsboom.com/listings/14643"
+    },
+    {
+      "id": 14646,
+      "nickname": "Bograshov 7 apt 11 Tel Aviv #562",
+      "address": "Bograshov Street 7 11",
+      "url": "https://seanrent.bookingsboom.com/listings/14646"
+    },
+    {
+      "id": 14648,
+      "nickname": "Balfour 37 Apt 6 Tel Aviv #659",
+      "address": "Balfour Street 37",
+      "url": "https://seanrent.bookingsboom.com/listings/14648"
+    },
+    {
+      "id": 14649,
+      "nickname": "David Hamelech 28 Apt 9 Tel Aviv #307",
+      "address": "Sderot David HaMelech 28",
+      "url": "https://seanrent.bookingsboom.com/listings/14649"
+    },
+    {
+      "id": 14655,
+      "nickname": "Gan Benyamin St 18 Apt 17 Eilat #874",
+      "address": "Gan Binyamin Street 18 Apt 17",
+      "url": "https://seanrent.bookingsboom.com/listings/14655"
+    },
+    {
+      "id": 14657,
+      "nickname": "Geula St 19 Apt 8 Tel Aviv #837",
+      "address": "Ge'ula Street 19 Apt 8",
+      "url": "https://seanrent.bookingsboom.com/listings/14657"
+    },
+    {
+      "id": 14658,
+      "nickname": "Gindi 454 Apt 1327 Tel Aviv #536",
+      "address": "Gindi Park, 1331 Street 7-1",
+      "url": "https://seanrent.bookingsboom.com/listings/14658"
+    },
+    {
+      "id": 14659,
+      "nickname": "Gordon 10 Apt 5 Tel Aviv #589",
+      "address": "J. L. Gordon St 10, apt 5, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14659"
+    },
+    {
+      "id": 14660,
+      "nickname": "Gordon 83 Apt 8 Tel Aviv #712",
+      "address": "J. L. Gordon Street 83",
+      "url": "https://seanrent.bookingsboom.com/listings/14660"
+    },
+    {
+      "id": 14661,
+      "nickname": "Hagefen Apt 152 Ramat hasharon #629",
+      "address": "Ha-Gefen Street 152",
+      "url": "https://seanrent.bookingsboom.com/listings/14661"
+    },
+    {
+      "id": 14662,
+      "nickname": "HaKongres 14 Apt 11 Tel Aviv #483",
+      "address": "HaKongres Street 14",
+      "url": "https://seanrent.bookingsboom.com/listings/14662"
+    },
+    {
+      "id": 14663,
+      "nickname": "HaKovshim 13 Tel Aviv #280",
+      "address": "HaKovshim Street 13",
+      "url": "https://seanrent.bookingsboom.com/listings/14663"
+    },
+    {
+      "id": 14664,
+      "nickname": "Hakovshim 15 Apt 1 Tel aviv #633",
+      "address": "HaKovshim Street 15",
+      "url": "https://seanrent.bookingsboom.com/listings/14664"
+    },
+    {
+      "id": 14665,
+      "nickname": "HaPninim 2 Apt 2 Tel Aviv #595",
+      "address": "HaPninim 2",
+      "url": "https://seanrent.bookingsboom.com/listings/14665"
+    },
+    {
+      "id": 14666,
+      "nickname": "HaRav Ahronson St 32 Apt 2 Tel Aviv #624",
+      "address": "HaRav Ahronson Street 32",
+      "url": "https://seanrent.bookingsboom.com/listings/14666"
+    },
+    {
+      "id": 14667,
+      "nickname": "Hayarkon 166 Tel Aviv #92",
+      "address": "HaYarkon St 166, Tel Aviv",
+      "url": "https://seanrent.bookingsboom.com/listings/14667"
+    },
+    {
+      "id": 14668,
+      "nickname": "Hayarkon 185 Apt 2 North - Tel Aviv #121",
+      "address": "HaYarkon Street 185",
+      "url": "https://seanrent.bookingsboom.com/listings/14668"
+    },
+    {
+      "id": 14669,
+      "nickname": "Hayarkon 281 Apt 2 Tel Aviv #528",
+      "address": "HaYarkon Street 281",
+      "url": "https://seanrent.bookingsboom.com/listings/14669"
+    },
+    {
+      "id": 14670,
+      "nickname": "HaYarkon 78 Apt 163 Tel Aviv #243",
+      "address": "Isrotel Tower, HaYarkon Street 78",
+      "url": "https://seanrent.bookingsboom.com/listings/14670"
+    },
+    {
+      "id": 14671,
+      "nickname": "Hayarkon 78 Apt 167 Tel Aviv #584",
+      "address": "Isrotel Tower, HaYarkon Street 78",
+      "url": "https://seanrent.bookingsboom.com/listings/14671"
+    },
+    {
+      "id": 14672,
+      "nickname": "HaYarkon 78 Apt 191 Tel Aviv #129",
+      "address": "Isrotel Tower, HaYarkon Street 78",
+      "url": "https://seanrent.bookingsboom.com/listings/14672"
+    },
+    {
+      "id": 14673,
+      "nickname": "HaYarkon 78 Apt 207 Tel Aviv #143",
+      "address": "Isrotel Tower, HaYarkon Street 78",
+      "url": "https://seanrent.bookingsboom.com/listings/14673"
+    },
+    {
+      "id": 14674,
+      "nickname": "Hayarkon 78 Apt 224 Tel Aviv #160",
+      "address": "Isrotel Tower, HaYarkon Street 78",
+      "url": "https://seanrent.bookingsboom.com/listings/14674"
+    },
+    {
+      "id": 14679,
+      "nickname": "Hovevei Zion 53 Tel Aviv #547",
+      "address": "Hovevei Tsiyon Street 53",
+      "url": "https://seanrent.bookingsboom.com/listings/14679"
+    },
+    {
+      "id": 14680,
+      "nickname": "Itamar Ben Avi 7 Apt 17 Tel Aviv #574",
+      "address": "Itamar Ben Avi St 7",
+      "url": "https://seanrent.bookingsboom.com/listings/14680"
+    },
+    {
+      "id": 14684,
+      "nickname": "Mapu 6 Apt 1 Tel Aviv #535",
+      "address": "Mapu Street 6",
+      "url": "https://seanrent.bookingsboom.com/listings/14684"
+    },
+    {
+      "id": 14686,
+      "nickname": "Mazeh 5 Apt 10 Tel Aviv #527",
+      "address": "Maze Street 5",
+      "url": "https://seanrent.bookingsboom.com/listings/14686"
+    },
+    {
+      "id": 14695,
+      "nickname": "Rothchild 113 Tel Aviv #475",
+      "address": "Rothschild Boulevard 113",
+      "url": "https://seanrent.bookingsboom.com/listings/14695"
+    },
+    {
+      "id": 14696,
+      "nickname": "Rupin 8 Apt 4 Tel Aviv #501",
+      "address": "Ruppin Street 8 4",
+      "url": "https://seanrent.bookingsboom.com/listings/14696"
+    },
+    {
+      "id": 14697,
+      "nickname": "Sderot Chen 35 Apt 3 Tel Aviv #649",
+      "address": "Sderot Chen 35",
+      "url": "https://seanrent.bookingsboom.com/listings/14697"
+    },
+    {
+      "id": 14699,
+      "nickname": "Sderot Nordau 30 Apt 4 Tel Aviv #679",
+      "address": "Sderot Nordau 30",
+      "url": "https://seanrent.bookingsboom.com/listings/14699"
+    },
+    {
+      "id": 14700,
+      "nickname": "Shats 15 Apt 13 Tel Aviv #567",
+      "address": "Shats Street 15",
+      "url": "https://seanrent.bookingsboom.com/listings/14700"
+    },
+    {
+      "id": 14704,
+      "nickname": "Rachel St 2 Apt 10 Tel Aviv⁩ #910",
+      "address": "Rakhel St 2, apartment 10, Tel Aviv-Yafo, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14704"
+    },
+    {
+      "id": 14706,
+      "nickname": "Sderot Nordau 16 Apt 5 Tel Aviv #653",
+      "address": "Sderot Nordau 16",
+      "url": "https://seanrent.bookingsboom.com/listings/14706"
+    },
+    {
+      "id": 14708,
+      "nickname": "Medinat Hayehudim 12 Apt 27 Herzliya #583",
+      "address": "Medinat ha-Yehudim Street 12",
+      "url": "https://seanrent.bookingsboom.com/listings/14708"
+    },
+    {
+      "id": 14711,
+      "nickname": "Lohamei HaGeta'ot St 41 Apt 2 Haifa #765",
+      "address": "Lokhamei ha-Geta'ot St 41, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14711"
+    },
+    {
+      "id": 14712,
+      "nickname": "Lohamei HaGeta'ot St 41 Apt 3 Haifa #766",
+      "address": "Lokhamei ha-Geta'ot St 41, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14712"
+    },
+    {
+      "id": 14713,
+      "nickname": "Lohamei HaGeta'ot St 41 Apt 4 Haifa #767",
+      "address": "Lokhamei ha-Geta'ot St 41, apt 4, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14713"
+    },
+    {
+      "id": 14715,
+      "nickname": "Achziv 2 Dugit no. 20 Nahariya #470",
+      "address": "דוגית 2, Nahariya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14715"
+    },
+    {
+      "id": 14716,
+      "nickname": "Hayarkon 78 Apt 210 Tel Aviv #863",
+      "address": "HaYarkon St 78, apt 210, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14716"
+    },
+    {
+      "id": 14720,
+      "nickname": "Rupin 45 Apt 8 Tel Aviv #259",
+      "address": "Ruppin Street 45",
+      "url": "https://seanrent.bookingsboom.com/listings/14720"
+    },
+    {
+      "id": 14722,
+      "nickname": "Ben Yehuda 100 Apt 14 Tel Aviv #851",
+      "address": "Ben Yehuda St 100, apt 14, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14722"
+    },
+    {
+      "id": 14723,
+      "nickname": "Idelson Street 1 Apt 26 Tel Aviv #771",
+      "address": "Idelson St 1, apt 26, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14723"
+    },
+    {
+      "id": 14726,
+      "nickname": "George Eliot 11 Apt 8 Tel Aviv #295",
+      "address": "George Eliot Street 11",
+      "url": "https://seanrent.bookingsboom.com/listings/14726"
+    },
+    {
+      "id": 14727,
+      "nickname": "Lohamei HaGeta'ot St 41 Apt 1 Haifa #769",
+      "address": "Lokhamei ha-Geta'ot St 41, apt 1, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14727"
+    },
+    {
+      "id": 14730,
+      "nickname": "E-Solo",
+      "address": "Doctor George Wise Street 20",
+      "url": "https://seanrent.bookingsboom.com/listings/14730"
+    },
+    {
+      "id": 14731,
+      "nickname": "D&E Double",
+      "address": "Doctor George Wise Street 20",
+      "url": "https://seanrent.bookingsboom.com/listings/14731"
+    },
+    {
+      "id": 14733,
+      "nickname": "Mamad C709",
+      "address": "Doctor George Wise Street 18",
+      "url": "https://seanrent.bookingsboom.com/listings/14733"
+    },
+    {
+      "id": 14734,
+      "nickname": "Suit-C701",
+      "address": "Doctor George Wise Street 18",
+      "url": "https://seanrent.bookingsboom.com/listings/14734"
+    },
+    {
+      "id": 14735,
+      "nickname": "Double room BUILDING C",
+      "address": "Doctor George Wise Street 18",
+      "url": "https://seanrent.bookingsboom.com/listings/14735"
+    },
+    {
+      "id": 14736,
+      "nickname": "Sheinkin 16 Tel Aviv #913",
+      "address": "Sheinkin St 16, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14736"
+    },
+    {
+      "id": 14737,
+      "nickname": "Dizengoff 132 Apt 9 Tel Aviv #914",
+      "address": "Dizengoff St 132, apt 9, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14737"
+    },
+    {
+      "id": 14739,
+      "nickname": "Noga 18 Caesarea #916",
+      "address": "Noga St 18, Caesarea, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14739"
+    },
+    {
+      "id": 14740,
+      "nickname": "Nachmani 17 St apt 13 Tel Aviv #917",
+      "address": "Nachmani St 17, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14740"
+    },
+    {
+      "id": 14745,
+      "nickname": "Hama'apilim 14 no. 3 Nahariya #490",
+      "address": "HaMa'apilim St 14, Nahariyya, 2238128, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14745"
+    },
+    {
+      "id": 14749,
+      "nickname": "Medinat Hayehudim 12 Apt 29 Herzliya #514",
+      "address": "Medinat ha-Yehudim Street 12 Apt 29",
+      "url": "https://seanrent.bookingsboom.com/listings/14749"
+    },
+    {
+      "id": 14769,
+      "nickname": "Solo Studio",
+      "address": "Dr George Wise St 18, Tel Aviv, 6997712, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/14769"
+    },
+    {
+      "id": 15108,
+      "nickname": "11 Royal Park Resort Studio",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15108"
+    },
+    {
+      "id": 15109,
+      "nickname": "14 Royal Park Resort Studio",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15109"
+    },
+    {
+      "id": 15110,
+      "nickname": "23 Royal Park Resort Studio",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15110"
+    },
+    {
+      "id": 15111,
+      "nickname": "53 Royal Park Resort Studio",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15111"
+    },
+    {
+      "id": 15112,
+      "nickname": "Royal Park Resort Studio 56",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15112"
+    },
+    {
+      "id": 15114,
+      "nickname": "55 Royal Park Resort Apartment w parking",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15114"
+    },
+    {
+      "id": 15115,
+      "nickname": "22 Royal Park Resort Apartment w parking",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15115"
+    },
+    {
+      "id": 15116,
+      "nickname": "44 Royal Park Resort Apartment w parking",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15116"
+    },
+    {
+      "id": 15117,
+      "nickname": "114 Royal Park Resort Apartment",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15117"
+    },
+    {
+      "id": 15118,
+      "nickname": "74 Royal Park Resort Apartment",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15118"
+    },
+    {
+      "id": 15120,
+      "nickname": "106 Royal Park Resort Apartment",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15120"
+    },
+    {
+      "id": 15121,
+      "nickname": "28 Royal Park Resort Apartment",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15121"
+    },
+    {
+      "id": 15126,
+      "nickname": "66 Royal Park Resort Apartment w parking",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15126"
+    },
+    {
+      "id": 15127,
+      "nickname": "98 Royal Park Resort Apartment",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15127"
+    },
+    {
+      "id": 15128,
+      "nickname": "85 Royal Park Resort Apartment w parking",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15128"
+    },
+    {
+      "id": 15129,
+      "nickname": "119 Royal Park Resort Apartment w parking",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15129"
+    },
+    {
+      "id": 15177,
+      "nickname": "Weitzman 98 Apt 1 Tel Aviv",
+      "address": "Weizmann St 98, apt 1, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15177"
+    },
+    {
+      "id": 15365,
+      "nickname": "Hamaagan 5 Apt 32 Nahariya",
+      "address": "המעגן 5, Nahariya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15365"
+    },
+    {
+      "id": 15425,
+      "nickname": "113 Royal Park Resort Apartment w parking",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15425"
+    },
+    {
+      "id": 15794,
+      "nickname": "Baruch Ram 5 St Apt 5 Netanya",
+      "address": "Baruch Ram St 5, Netanya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15794"
+    },
+    {
+      "id": 15795,
+      "nickname": "Baruch Ram 5 St Apt 1 Netanya",
+      "address": "Baruch Ram St 5, Netanya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15795"
+    },
+    {
+      "id": 15796,
+      "nickname": "Baruch Ram 5 St Apt 3 Netanya",
+      "address": "Baruch Ram St 5, Netanya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15796"
+    },
+    {
+      "id": 15797,
+      "nickname": "Baruch Ram 5 St Apt 4 Netanya",
+      "address": "Baruch Ram St 5, Netanya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15797"
+    },
+    {
+      "id": 15798,
+      "nickname": "Baruch Ram 5 St Apt 2 Netanya",
+      "address": "Baruch Ram St 5, Netanya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15798"
+    },
+    {
+      "id": 15813,
+      "nickname": "Yishayahu 3 Haifa",
+      "address": "Yesha'ayahu St 3, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15813"
+    },
+    {
+      "id": 15927,
+      "nickname": "Koh Samui Thailand",
+      "address": "116, Tambon Maret, Amphoe Ko Samui, Chang Wat Surat Thani 84310, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/15927"
+    },
+    {
+      "id": 15928,
+      "nickname": "Coconut Lane Koh Phangan Thailand",
+      "address": "QX3H+953 Ko Pha-ngan, Ko Pha-ngan District, Surat Thani, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/15928"
+    },
+    {
+      "id": 15986,
+      "nickname": "Stein 9 Tel Aviv",
+      "address": "Stein St 9, Tel Aviv-Yafo, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/15986"
+    },
+    {
+      "id": 16139,
+      "nickname": "Kinnamon 16 entrance C Apt 3 Eilat",
+      "address": "Kinamon St 16, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/16139"
+    },
+    {
+      "id": 16743,
+      "nickname": "Sheshet Hayamim 334 apt 117 Eilat",
+      "address": "Sderot Sheshet HaYamim 334, apt 117, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/16743"
+    },
+    {
+      "id": 16988,
+      "nickname": "Louis Pasteur St 3 Apt 9 Tel Aviv",
+      "address": "Louis Pasteur St 3, apt 9, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/16988"
+    },
+    {
+      "id": 16995,
+      "nickname": "Ehud Manor 10 Apt 66 Netanya",
+      "address": "Ehud Manor St 10, apt 66, Netanya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/16995"
+    },
+    {
+      "id": 17316,
+      "nickname": "Hing Kong Koh Phangan Thailand",
+      "address": "34 Hin Kong Rd, Tambon Ko Pha-ngan, Amphoe Ko Pha-ngan, Chang Wat Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/17316"
+    },
+    {
+      "id": 17513,
+      "nickname": "Baruch Ram 5 Netanya",
+      "address": "Baruch Ram St 5, Netanya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/17513"
+    },
+    {
+      "id": 17979,
+      "nickname": "D&E Suite",
+      "address": "Doctor George Wise Street 20",
+      "url": "https://seanrent.bookingsboom.com/listings/17979"
+    },
+    {
+      "id": 18031,
+      "nickname": "Ha-Hagshama 2 Gesher Haziv",
+      "address": "ההגשמה 2, Gesher HaZiv, 22815, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18031"
+    },
+    {
+      "id": 18123,
+      "nickname": "Galei Ha-Yam 35 Kfar Rosh Ha-Nikra",
+      "address": "Galei ha-Yam St 35, Rosh HaNikra, 2282500, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18123"
+    },
+    {
+      "id": 18124,
+      "nickname": "Ekron St 17 Apt 10 Haifa",
+      "address": "Ekron St 17, apt 10, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18124"
+    },
+    {
+      "id": 18157,
+      "nickname": "David Elazar St 10 Apt 503 Haifa",
+      "address": "David Elazar St 10, apt 503, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18157"
+    },
+    {
+      "id": 18159,
+      "nickname": "David Elazar St 10 Apt 937 Haifa",
+      "address": "David Elazar St 10, apt 937, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18159"
+    },
+    {
+      "id": 18160,
+      "nickname": "David Elazar St 10 Apt 1215 Haifa",
+      "address": "David Elazar St 10, apt 1215, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18160"
+    },
+    {
+      "id": 18161,
+      "nickname": "David Elazar St 10 Apt 1217 Haifa",
+      "address": "David Elazar St 10, apt 1217, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18161"
+    },
+    {
+      "id": 18279,
+      "nickname": "Hamaagan 1 Apt 25 Achziv",
+      "address": "המעגן 1, Nahariya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18279"
+    },
+    {
+      "id": 18307,
+      "nickname": "Kibutz Eilon Kinor 2 & 3, Viola 2 & 3, Cello 2 & 3",
+      "address": "Eilon, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18307"
+    },
+    {
+      "id": 18308,
+      "nickname": "Kibutz Eilon Kinor 4, Viola 4",
+      "address": "Eilon, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18308"
+    },
+    {
+      "id": 18332,
+      "nickname": "Kibutz Eilon Kinor 1, Viola 1, Contrabass",
+      "address": "Eilon, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18332"
+    },
+    {
+      "id": 18427,
+      "nickname": "Royal Park Apt 58 Kampen 1 Eilat",
+      "address": "Kampen St 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18427"
+    },
+    {
+      "id": 18442,
+      "nickname": "Sheshet Hayamim 334 Apt 41 Eilat",
+      "address": "Sderot Sheshet HaYamim 334, apt 41, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18442"
+    },
+    {
+      "id": 18450,
+      "nickname": "Exarchia Athens Apt 1201",
+      "address": "Soultani 12, Athens 106 83, Greece",
+      "url": "https://seanrent.bookingsboom.com/listings/18450"
+    },
+    {
+      "id": 18451,
+      "nickname": "Exarchia Athens Apt 1212",
+      "address": "Soultani 12, Athens 106 83, Greece",
+      "url": "https://seanrent.bookingsboom.com/listings/18451"
+    },
+    {
+      "id": 18452,
+      "nickname": "Exarchia Athens Apt 1211",
+      "address": "Soultani 12, Athens 106 83, Greece",
+      "url": "https://seanrent.bookingsboom.com/listings/18452"
+    },
+    {
+      "id": 18453,
+      "nickname": "Exarchia Athens Loft Apt 1231",
+      "address": "Soultani 12, Athens 106 83, Greece",
+      "url": "https://seanrent.bookingsboom.com/listings/18453"
+    },
+    {
+      "id": 18492,
+      "nickname": "Ekron 17 Apt 2 Haifa",
+      "address": "Ekron St 17, apt 2, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/18492"
+    },
+    {
+      "id": 18942,
+      "nickname": "Exarchia Athens Apt 1221",
+      "address": "Soultani 12, Athens 106 83, Greece",
+      "url": "https://seanrent.bookingsboom.com/listings/18942"
+    },
+    {
+      "id": 18943,
+      "nickname": "Exarchia Athens Apt 1222",
+      "address": "Soultani 12, Athens 106 83, Greece",
+      "url": "https://seanrent.bookingsboom.com/listings/18943"
+    },
+    {
+      "id": 18944,
+      "nickname": "Exarchia Athens Apt 1232",
+      "address": "Soultani 12, Athens 106 83, Greece",
+      "url": "https://seanrent.bookingsboom.com/listings/18944"
+    },
+    {
+      "id": 19140,
+      "nickname": "Shilo 1 Apt 12 Tel Aviv",
+      "address": "Shilo St 1, apt 12, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/19140"
+    },
+    {
+      "id": 19361,
+      "nickname": "Coconut WayWay Main, Koh Phangan",
+      "address": "Coconut lane, Koh Pangan, Surat Thani, Thailand ",
+      "url": "https://seanrent.bookingsboom.com/listings/19361"
+    },
+    {
+      "id": 19518,
+      "nickname": "HaBatsir Stairs 5 Jerusalem",
+      "address": "HaBatsir Stairs 5, Jerusalem, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/19518"
+    },
+    {
+      "id": 19598,
+      "nickname": "Trumpeldor 1 Apt 25 Tel Aviv",
+      "address": "Trumpeldor St 1, apt 25, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/19598"
+    },
+    {
+      "id": 19599,
+      "nickname": "Gordon 10 Apt 2 Tel Aviv",
+      "address": "J. L. Gordon St 10, apt 2, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/19599"
+    },
+    {
+      "id": 19669,
+      "nickname": "Dreamy Ocean Villa A Koh Phangan Thailand",
+      "address": "51, 7, Wok tum, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/19669"
+    },
+    {
+      "id": 19959,
+      "nickname": "Yitshak Sadeh St 30 Nahariya",
+      "address": "Yitshak Sadeh St 30, Nahariyya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/19959"
+    },
+    {
+      "id": 20116,
+      "nickname": "Ha-Gefen St 145 Tefahot - Unit",
+      "address": "Ha-Gefen St 145, Tefahot, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/20116"
+    },
+    {
+      "id": 20292,
+      "nickname": "Los Angeles 6 Apt 68 Eilat",
+      "address": "Los Angeles St 6, apt 68, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/20292"
+    },
+    {
+      "id": 20301,
+      "nickname": "Sheshet Hayamim 334 Apt 118 Eilat",
+      "address": "Sderot Sheshet HaYamim 334, apt 118, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/20301"
+    },
+    {
+      "id": 20304,
+      "nickname": "Koh Phangan Beach Front",
+      "address": "78/12 moo 4, Wok tum, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/20304"
+    },
+    {
+      "id": 20939,
+      "nickname": "Kinnamon 16 entrance C Apt 1 Eilat",
+      "address": "Kinamon St 16, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/20939"
+    },
+    {
+      "id": 20944,
+      "nickname": "Dreamy Jungle Villa Koh Phangan",
+      "address": "31/31, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/20944"
+    },
+    {
+      "id": 20945,
+      "nickname": "Dreamy Jungle View Villa Koh Phangan",
+      "address": "31/31, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/20945"
+    },
+    {
+      "id": 20950,
+      "nickname": "NM Mishol Dakotta 3 Apt 2 Eilat",
+      "address": "Derekh ha-Arava 1, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/20950"
+    },
+    {
+      "id": 21135,
+      "nickname": "Dreamy Ocean Villa C Koh Phangan Thailand",
+      "address": "51, 10, Wok tum, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/21135"
+    },
+    {
+      "id": 21137,
+      "nickname": "Dreamy Ocean Villa D Koh Phangan Thailand",
+      "address": "51, 10, Wok tum, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/21137"
+    },
+    {
+      "id": 21138,
+      "nickname": "Dreamy Ocean Villa E Koh Phangan Thailand",
+      "address": "51, 10, Wok tum, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/21138"
+    },
+    {
+      "id": 21139,
+      "nickname": "Dreamy Ocean Villa Complex Koh Phangan Thailand",
+      "address": "51, 10, Wok tum, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/21139"
+    },
+    {
+      "id": 22435,
+      "nickname": "Jungle Villa Koh Phangan",
+      "address": "31/31, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/22435"
+    },
+    {
+      "id": 22550,
+      "nickname": "Hayarkon 78 Apt 2601 Tel Aviv",
+      "address": "HaYarkon St 78, apt 2601, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/22550"
+    },
+    {
+      "id": 22552,
+      "nickname": "Gush Halav 3 Apt 3 Tel Aviv",
+      "address": "Gush Khalav St 3, Tel Aviv, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/22552"
+    },
+    {
+      "id": 22584,
+      "nickname": "Avigayil Apt 5 Herzliya #658",
+      "address": "Avigayil St 5, Herzliya, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/22584"
+    },
+    {
+      "id": 22604,
+      "nickname": "Migdal Pikoach  5 apt 6 Eilat",
+      "address": "מגדל פיקוח 11, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/22604"
+    },
+    {
+      "id": 22645,
+      "nickname": "Koh Phangan SHIRA property",
+      "address": "86/18, Koh phangan, Koh Phangan, Surat Thani 84280, Thailand",
+      "url": "https://seanrent.bookingsboom.com/listings/22645"
+    },
+    {
+      "id": 23441,
+      "nickname": "Sheshet Hayamim 334 apt 98 Eilat",
+      "address": "Sderot Sheshet HaYamim 334, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23441"
+    },
+    {
+      "id": 23452,
+      "nickname": "Sheshet Hayamim 334 apt 35 Eilat",
+      "address": "Sderot Sheshet HaYamim 334, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23452"
+    },
+    {
+      "id": 23465,
+      "nickname": "Sheshet Hayamim 334 apt 44 Eilat",
+      "address": "Sderot Sheshet HaYamim 334, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23465"
+    },
+    {
+      "id": 23748,
+      "nickname": "Hanof 2 Apt 1, Shavei Tzion",
+      "address": "Shavei Tzion, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23748"
+    },
+    {
+      "id": 23749,
+      "nickname": "Sheinkin 21 apt 1 Tel Aviv",
+      "address": "Sheinkin St 21, Tel Aviv-Yafo, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23749"
+    },
+    {
+      "id": 23763,
+      "nickname": "Gan Benyamin 18 apt 10 EIlat",
+      "address": "Gan Binyamin St 18, Eilat, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23763"
+    },
+    {
+      "id": 23865,
+      "nickname": "Hanof 2  Apt 2, Shavei Tzion",
+      "address": "Shavei Tzion, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23865"
+    },
+    {
+      "id": 23867,
+      "nickname": "Hanof 2 Shavei Tzion",
+      "address": "Shavei Tzion, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/23867"
+    },
+    {
+      "id": 24930,
+      "nickname": "David Elazar St 10 Apt 915 Haifa",
+      "address": "David Elazar St 10, apt 915, Haifa, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/24930"
+    },
+    {
+      "id": 25049,
+      "nickname": "Arlozorov 15 apt 6, Tel aviv",
+      "address": "Arlozorov St 15, Tel Aviv-Yafo, Israel",
+      "url": "https://seanrent.bookingsboom.com/listings/25049"
+    }
+  ],
+  "bookingSeanrent": [],
+  "airbnb": []
+}

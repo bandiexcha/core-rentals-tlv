@@ -1,0 +1,46 @@
+{
+  "name": "core-rentals-tlv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "import:apartment": "node scripts/import-catalog.mjs",
+    "import:catalog": "node scripts/import-catalog.mjs",
+    "import:resume": "node scripts/resume-holyguest.mjs",
+    "import:seanrent": "node scripts/import-seanrent-urls.mjs",
+    "discover:seanrent": "node scripts/discover-seanrent.mjs",
+    "discover:seanrent:status": "node scripts/discover-seanrent.mjs --status",
+    "discover:seanrent:legacy": "node scripts/discover-seanrent-properties.mjs",
+    "discover:seanrent:web": "node scripts/discover-seanrent-web.mjs",
+    "discover:seanrent:full": "node scripts/discover-seanrent-full.mjs",
+    "import:seanrent:syndicated": "node scripts/import-seanrent-syndicated.mjs",
+    "import:seanrent:bookingsboom": "node scripts/import-seanrent-bookingsboom.mjs",
+    "cleanup:branding": "node scripts/cleanup-branding.mjs",
+    "cleanup:branding:images": "node scripts/cleanup-branding-images.mjs",
+    "audit:branding": "node scripts/audit-branding.mjs",
+    "backfill:addresses": "node scripts/backfill-addresses.mjs",
+    "approve": "node scripts/approve-apartment.mjs"
+  },
+  "dependencies": {
+    "next": "16.2.7",
+    "nodemailer": "^8.0.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.7",
+    "playwright": "^1.60.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
