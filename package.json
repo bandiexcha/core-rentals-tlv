@@ -22,7 +22,8 @@
     "cleanup:branding:images": "node scripts/cleanup-branding-images.mjs",
     "audit:branding": "node scripts/audit-branding.mjs",
     "backfill:addresses": "node scripts/backfill-addresses.mjs",
-    "approve": "node scripts/approve-apartment.mjs"
+    "approve": "node scripts/approve-apartment.mjs",
+    "publish:production": "node scripts/publish-production.mjs"
   },
   "dependencies": {
     "next": "16.2.7",
