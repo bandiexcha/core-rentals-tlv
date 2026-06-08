@@ -28,10 +28,10 @@ export function upsertApartment(catalog, apartment) {
   return "created";
 }
 
-export function uniqueSlug(catalog, baseSlug) {
+export function uniqueSlug(catalog, baseSlug, excludeId) {
   let slug = baseSlug;
   let i = 2;
-  while (catalog.apartments.some((a) => a.slug === slug)) {
+  while (catalog.apartments.some((a) => a.slug === slug && a.id !== excludeId)) {
     slug = `${baseSlug}-${i}`;
     i++;
   }

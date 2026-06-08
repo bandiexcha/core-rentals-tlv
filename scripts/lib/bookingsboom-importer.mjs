@@ -16,7 +16,7 @@ import {
   shortDescriptionFromFull,
 } from "./branding-cleanup.mjs";
 import {
-  buildBrandingHashBlocklist,
+  KNOWN_BRANDING_HASHES,
   filterBrandingImagesAsync,
 } from "./branding-image-detect.mjs";
 import {
@@ -124,9 +124,11 @@ async function downloadImages(slug, imageUrls) {
 
 async function filterDownloadedGallery(slug, images) {
   if (!images.length) return images;
-  const catalog = loadCatalog();
-  const blocklist = buildBrandingHashBlocklist(IMAGES_DIR, catalog, 5);
-  const filtered = await filterBrandingImagesAsync(images, IMAGES_DIR, slug, blocklist);
+  const blocklist = KNOWN_BRANDING_HASHES;
+  const filtered = await filterBrandingImagesAsync(images, IMAGES_DIR, slug, blocklist, {
+    definiteOnly: true,
+    safeMinKeep: 3,
+  });
   if (filtered.length === images.length) return filtered;
 
   for (const img of images) {
@@ -186,8 +188,15 @@ export async function importBookingsBoomListing(page, listingId, sessionId, opti
 
   const catalog = loadCatalog();
   const aptId = bookingsBoomApartmentId(listingId);
+  const existing = catalog.apartments.find(
+    (a) => a.id === aptId || a.internalSourceUrl === bookingsBoomSourceUrl(listingId)
+  );
   const baseSlug = slugify(name) || `seanrent-${listingId}`;
-  const slug = uniqueSlug(catalog, baseSlug);
+  const slug = existing
+    ? catalog.apartments.some((a) => a.slug === baseSlug && a.id !== existing.id)
+      ? existing.slug
+      : baseSlug
+    : uniqueSlug(catalog, baseSlug);
 
   const imageUrls = filterListingImages(extractImageUrls(listing));
   if (!imageUrls.length) throw new Error("No images found");

@@ -2,7 +2,7 @@ node_modules
 .next
 .git
 scripts
-data
+/data
 src/data/seanrent-discovery.json
 src/data/seanrent-import-progress.json
 src/data/seanrent-urls.json

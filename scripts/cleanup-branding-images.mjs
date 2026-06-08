@@ -8,7 +8,7 @@
 import fs from "fs";
 import path from "path";
 import {
-  buildBrandingHashBlocklist,
+  KNOWN_BRANDING_HASHES,
   filterBrandingImagesAsync,
   resetBrandingHashCache,
 } from "./lib/branding-image-detect.mjs";
@@ -20,12 +20,12 @@ const dryRun = process.argv.includes("--dry-run");
 async function main() {
   resetBrandingHashCache();
   const catalog = loadCatalog();
-  const blocklist = buildBrandingHashBlocklist(IMAGES_DIR, catalog, 5);
+  const blocklist = KNOWN_BRANDING_HASHES;
 
   console.log(
-    `\n🖼  Branding image cleanup${dryRun ? " (dry run)" : ""} — ${catalog.apartments.length} apartments`
+    `\n🖼  Branding image cleanup (definite cards only)${dryRun ? " (dry run)" : ""} — ${catalog.apartments.length} apartments`
   );
-  console.log(`   Blocklist: ${blocklist.size} duplicate template hashes\n`);
+  console.log(`   Known branding hashes: ${blocklist.size}\n`);
 
   let totalRemoved = 0;
   let apartmentsAffected = 0;
@@ -52,7 +52,8 @@ async function main() {
       currentImages,
       IMAGES_DIR,
       apt.slug,
-      blocklist
+      blocklist,
+      { definiteOnly: true, safeMinKeep: 3 }
     );
 
     if (filtered.length === currentImages.length) continue;
