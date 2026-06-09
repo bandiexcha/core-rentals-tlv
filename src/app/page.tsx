@@ -4,7 +4,8 @@ import Link from "next/link";
 import { ApartmentGrid } from "@/components/apartments/ApartmentGrid";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Button, WhatsAppButton } from "@/components/ui/Button";
-import { getApartmentCount, getFeaturedApartments } from "@/lib/apartments";
+import { getApartmentCount, getHomepageApartments } from "@/lib/apartments";
+import { withCatalogCovers } from "@/lib/catalog-images";
 import { SITE } from "@/lib/constants";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -50,7 +51,7 @@ const LOCATION_LINKS = [
 ];
 
 export default function HomePage() {
-  const featured = getFeaturedApartments(6);
+  const featured = withCatalogCovers(getHomepageApartments(), { reorder: true });
   const count = getApartmentCount();
 
   return (

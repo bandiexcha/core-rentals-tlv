@@ -1,5 +1,10 @@
 import catalogData from "@/data/apartments.json";
+import {
+  HOME_PAGE_APARTMENT_LIMIT,
+  selectVisuallyDiverseApartments,
+} from "@/lib/catalog-images";
 import { sanitizeApartmentForPublic } from "@/lib/brand-sanitize";
+import { resolveNeighborhood } from "@/lib/neighborhood";
 import type {
   Apartment,
   ApartmentCatalog,
@@ -10,7 +15,11 @@ import type {
 const catalog = catalogData as ApartmentCatalog;
 
 function publicApartment(apartment: Apartment): Apartment {
-  return sanitizeApartmentForPublic(apartment);
+  const sanitized = sanitizeApartmentForPublic(apartment);
+  return {
+    ...sanitized,
+    neighborhood: resolveNeighborhood(sanitized),
+  };
 }
 
 export function getAllApartments(includeUnpublished = false): Apartment[] {
@@ -27,6 +36,13 @@ export function getFeaturedApartments(limit = 6): Apartment[] {
   return getAllApartments()
     .filter((a) => a.featured)
     .slice(0, limit);
+}
+
+/** Homepage showcase: keep all featured listings, then fill to 12 with diverse picks. */
+export function getHomepageApartments(
+  limit = HOME_PAGE_APARTMENT_LIMIT
+): Apartment[] {
+  return selectVisuallyDiverseApartments(getAllApartments(), limit);
 }
 
 export function getApartmentCount(): number {

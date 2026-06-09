@@ -7,10 +7,11 @@ import { apartmentImageAlt } from "@/lib/seo";
 
 interface ApartmentCardProps {
   apartment: Apartment;
+  coverIndex?: number;
 }
 
-export function ApartmentCard({ apartment }: ApartmentCardProps) {
-  const cover = apartment.images[0];
+export function ApartmentCard({ apartment, coverIndex = 0 }: ApartmentCardProps) {
+  const cover = apartment.images[coverIndex] ?? apartment.images[0];
   const whatsappMessage = apartmentWhatsAppMessage(apartment.name);
 
   return (
@@ -20,7 +21,7 @@ export function ApartmentCard({ apartment }: ApartmentCardProps) {
           {cover ? (
             <Image
               src={cover.url}
-              alt={apartmentImageAlt(apartment, 0)}
+              alt={apartmentImageAlt(apartment, coverIndex)}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"

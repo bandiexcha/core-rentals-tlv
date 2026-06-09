@@ -11,6 +11,7 @@ import {
   getGuideBySlug,
 } from "@/data/location-guides";
 import { getApartmentsForGuide } from "@/lib/apartments";
+import { withCatalogCovers } from "@/lib/catalog-images";
 import { faqSchema } from "@/lib/json-ld";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -39,11 +40,13 @@ export default async function GuidePage({ params }: PageProps) {
   const guide = getGuideBySlug(slug);
   if (!guide) notFound();
 
-  const apartments = getApartmentsForGuide({
-    neighborhoods: guide.neighborhoods,
-    tag: guide.tag,
-    limit: 6,
-  });
+  const apartments = withCatalogCovers(
+    getApartmentsForGuide({
+      neighborhoods: guide.neighborhoods,
+      tag: guide.tag,
+      limit: 6,
+    })
+  );
 
   const catalogHref = guide.neighborhoods?.length
     ? `/apartments?neighborhood=${encodeURIComponent(guide.neighborhoods[0])}`

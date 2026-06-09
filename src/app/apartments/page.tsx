@@ -6,6 +6,7 @@ import { ApartmentGrid } from "@/components/apartments/ApartmentGrid";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getApartmentCount, filterApartments, parseSearchParams } from "@/lib/apartments";
+import { withCatalogCovers } from "@/lib/catalog-images";
 import { itemListSchema } from "@/lib/json-ld";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -37,7 +38,9 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
 export default async function ApartmentsPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const filters = parseSearchParams(params);
-  const apartments = filterApartments(filters);
+  const apartments = withCatalogCovers(filterApartments(filters), {
+    reorder: true,
+  });
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">

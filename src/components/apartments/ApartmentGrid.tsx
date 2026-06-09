@@ -1,8 +1,8 @@
-import type { Apartment } from "@/types/apartment";
+import type { ApartmentWithCatalogCover } from "@/types/apartment";
 import { ApartmentCard } from "./ApartmentCard";
 
 interface ApartmentGridProps {
-  apartments: Apartment[];
+  apartments: ApartmentWithCatalogCover[];
   emptyMessage?: string;
 }
 
@@ -22,7 +22,11 @@ export function ApartmentGrid({
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {apartments.map((apartment) => (
-        <ApartmentCard key={apartment.id} apartment={apartment} />
+        <ApartmentCard
+          key={apartment.id}
+          apartment={apartment}
+          coverIndex={apartment.catalogCoverIndex ?? 0}
+        />
       ))}
     </div>
   );

@@ -38,6 +38,10 @@ export interface Apartment {
   amenities: string[];
   tags: ApartmentTag[];
   images: ApartmentImage[];
+  /** MD5 fingerprints for local images — used to avoid duplicate catalog heroes */
+  imageFingerprints?: string[];
+  /** 256-bit perceptual hashes for visual de-duplication in catalog grids */
+  imageVisualHashes?: string[];
   /** Admin-only — never exposed on the public site */
   internalSourceUrl: string;
   source: ApartmentSource;
@@ -51,6 +55,12 @@ export interface Apartment {
 export interface ApartmentImage {
   url: string;
   alt: string;
+  /** Original CDN URL — used for catalog de-duplication, not shown publicly */
+  sourceUrl?: string;
+}
+
+export interface ApartmentWithCatalogCover extends Apartment {
+  catalogCoverIndex?: number;
 }
 
 export interface ApartmentCatalog {
