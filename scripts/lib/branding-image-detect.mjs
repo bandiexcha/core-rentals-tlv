@@ -13,6 +13,12 @@ export const KNOWN_BRANDING_HASHES = new Set([
   "02176ecde959c89afeac60506bb4459a", // Safe room / promo card
   "2bef5d548506f0c0bc81a9606a6c98cf", // HolyGuest card
   "230aeff3ecee3abd53620d0896d5467c", // Safe room card
+  "f53583966dd5b29c677393cd981b2a04", // HolyGuest collage "Book your HolyGuest Experience" (original)
+  "2387ae241faf1d027b09bc3596509550", // HolyGuest collage (CDN variant)
+  "2d866b232b694a9a44c2f81ceae7670c", // Sea N Rent contact card — window view + phone/email
+  "b86aa22b199581e2e1a215b15e7ee930", // Sea N Rent contact card — pool overlay
+  "6a25b0a49981448b15591887ea997b27", // Sea N Rent branding — boulevard overlay
+  "2d6a943c769c7e061c44f970a6fdf92b", // Sea N Rent branding — variant B
 ]);
 
 const BRAND_IMAGE_URL_RE =
