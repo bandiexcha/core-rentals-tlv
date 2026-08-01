@@ -4,6 +4,10 @@ import {
   selectVisuallyDiverseApartments,
 } from "@/lib/catalog-images";
 import { sanitizeApartmentForPublic } from "@/lib/brand-sanitize";
+import {
+  isGarbageLocation,
+  normalizeApartmentLocation,
+} from "@/lib/location";
 import { resolveNeighborhood } from "@/lib/neighborhood";
 import type {
   Apartment,
@@ -16,9 +20,19 @@ const catalog = catalogData as ApartmentCatalog;
 
 function publicApartment(apartment: Apartment): Apartment {
   const sanitized = sanitizeApartmentForPublic(apartment);
+  const resolvedNeighborhood = resolveNeighborhood(sanitized);
+  const location = normalizeApartmentLocation({
+    ...sanitized,
+    neighborhood: resolvedNeighborhood,
+  });
+  const city =
+    location.city ||
+    (!isGarbageLocation(sanitized.city) ? sanitized.city.trim() : "") ||
+    "Tel Aviv";
   return {
     ...sanitized,
-    neighborhood: resolveNeighborhood(sanitized),
+    city,
+    neighborhood: location.neighborhood,
   };
 }
 
@@ -69,7 +83,20 @@ export function getApartmentsForGuide(options: {
 }
 
 export function getNeighborhoods(): string[] {
-  const set = new Set(getAllApartments().map((a) => a.neighborhood));
+  const set = new Set(
+    getAllApartments()
+      .map((a) => a.neighborhood)
+      .filter((n) => n && !/^\d+$/.test(n))
+  );
+  return [...set].sort();
+}
+
+export function getCities(): string[] {
+  const set = new Set(
+    getAllApartments()
+      .map((a) => a.city)
+      .filter((c) => c && !/^\d+$/.test(c))
+  );
   return [...set].sort();
 }
 
@@ -85,8 +112,11 @@ export function filterApartments(filters: ApartmentFilters): Apartment[] {
     if (query) {
       const haystack = [
         apartment.name,
+        apartment.slug,
+        apartment.id,
         apartment.neighborhood,
         apartment.city,
+        apartment.address ?? "",
         apartment.shortDescription,
         apartment.fullDescription,
         ...apartment.amenities,
@@ -94,7 +124,11 @@ export function filterApartments(filters: ApartmentFilters): Apartment[] {
       ]
         .join(" ")
         .toLowerCase();
-      if (!haystack.includes(query)) return false;
+      const tokens = query.split(/\s+/).filter(Boolean);
+      if (!tokens.every((token) => haystack.includes(token))) return false;
+    }
+    if (filters.city && apartment.city !== filters.city) {
+      return false;
     }
     if (
       filters.neighborhood &&
@@ -105,7 +139,11 @@ export function filterApartments(filters: ApartmentFilters): Apartment[] {
     if (filters.guests && apartment.guests < filters.guests) {
       return false;
     }
-    if (filters.bedrooms && apartment.bedrooms < filters.bedrooms) {
+    // Exact bedroom match (not "N or more")
+    if (
+      typeof filters.bedrooms === "number" &&
+      apartment.bedrooms !== filters.bedrooms
+    ) {
       return false;
     }
     if (filters.bathrooms && apartment.bathrooms < filters.bathrooms) {
@@ -118,10 +156,10 @@ export function filterApartments(filters: ApartmentFilters): Apartment[] {
       if (!hasAll) return false;
     }
     if (filters.tags?.length) {
-      const hasAny = filters.tags.some((tag) =>
+      const hasAllTags = filters.tags.every((tag) =>
         apartment.tags.includes(tag as ApartmentTag)
       );
-      if (!hasAny) return false;
+      if (!hasAllTags) return false;
     }
     return true;
   });
@@ -139,6 +177,7 @@ export function parseSearchParams(
   const tags = get("tags");
 
   return {
+    city: get("city") || undefined,
     neighborhood: get("neighborhood") || undefined,
     guests: get("guests") ? Number(get("guests")) : undefined,
     bedrooms: get("bedrooms") ? Number(get("bedrooms")) : undefined,

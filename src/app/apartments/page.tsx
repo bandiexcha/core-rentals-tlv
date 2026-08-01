@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import Link from "next/link";
-import { ApartmentFilters } from "@/components/apartments/ApartmentFilters";
-import { ApartmentGrid } from "@/components/apartments/ApartmentGrid";
+import { ApartmentCatalogClient } from "@/components/apartments/ApartmentCatalogClient";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getApartmentCount, filterApartments, parseSearchParams } from "@/lib/apartments";
+import {
+  getAllApartments,
+  getApartmentCount,
+} from "@/lib/apartments";
 import { withCatalogCovers } from "@/lib/catalog-images";
 import { itemListSchema } from "@/lib/json-ld";
 import { buildPageMetadata } from "@/lib/seo";
@@ -18,6 +20,7 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
   const params = await searchParams;
   const neighborhood =
     typeof params.neighborhood === "string" ? params.neighborhood : undefined;
+  const city = typeof params.city === "string" ? params.city : undefined;
   const count = getApartmentCount();
 
   if (neighborhood) {
@@ -28,27 +31,33 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
     });
   }
 
+  if (city) {
+    return buildPageMetadata({
+      title: `${city} Vacation Apartments`,
+      description: `Browse curated vacation apartments in ${city}. ${count}+ listings with photos, amenities, and capacity. Request availability via Core Rentals TLV.`,
+      path: `/apartments?city=${encodeURIComponent(city)}`,
+    });
+  }
+
   return buildPageMetadata({
     title: "Tel Aviv Apartment Catalog | Vacation Rentals",
-    description: `Browse ${count}+ curated Tel Aviv vacation apartments. Filter by neighborhood, guests, bedrooms, amenities, and tags. Core Rentals TLV — inquiry-only boutique catalog in Israel.`,
+    description: `Browse ${count}+ curated Tel Aviv vacation apartments. Filter by city, neighborhood, guests, bedrooms, amenities, and tags. Core Rentals TLV — inquiry-only boutique catalog in Israel.`,
     path: "/apartments",
   });
 }
 
 export default async function ApartmentsPage({ searchParams }: PageProps) {
-  const params = await searchParams;
-  const filters = parseSearchParams(params);
-  const apartments = withCatalogCovers(filterApartments(filters), {
+  await searchParams;
+  const apartments = withCatalogCovers(getAllApartments(), {
     reorder: true,
   });
+  const totalCount = getApartmentCount();
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <JsonLd
         data={itemListSchema(
-          filters.neighborhood
-            ? `${filters.neighborhood} Tel Aviv Apartments`
-            : "Tel Aviv Vacation Apartment Catalog",
+          "Tel Aviv Vacation Apartment Catalog",
           apartments,
           "/apartments"
         )}
@@ -65,13 +74,11 @@ export default async function ApartmentsPage({ searchParams }: PageProps) {
           Catalog
         </p>
         <h1 className="mt-2 font-serif text-3xl text-navy sm:text-4xl">
-          {filters.neighborhood
-            ? `${filters.neighborhood} — Tel Aviv Apartments`
-            : "Tel Aviv Apartments"}
+          Tel Aviv Apartments
         </h1>
         <p className="mt-3 max-w-2xl text-muted">
-          Filter by neighborhood, capacity, and amenities. When you find the
-          right fit, request availability — we respond personally. Explore our{" "}
+          Find any apartment in seconds — filter by city, neighborhood, and
+          exact bedroom count. Explore our{" "}
           <Link href="/guides" className="text-mediterranean hover:underline">
             Tel Aviv area guides
           </Link>{" "}
@@ -79,19 +86,16 @@ export default async function ApartmentsPage({ searchParams }: PageProps) {
         </p>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-[280px_1fr]">
-        <Suspense fallback={<div className="h-96 animate-pulse rounded-2xl bg-cream" />}>
-          <ApartmentFilters />
-        </Suspense>
-
-        <div>
-          <p className="mb-6 text-sm text-muted" aria-live="polite">
-            {apartments.length}{" "}
-            {apartments.length === 1 ? "apartment" : "apartments"} in Tel Aviv
-          </p>
-          <ApartmentGrid apartments={apartments} />
-        </div>
-      </div>
+      <Suspense
+        fallback={
+          <div className="h-96 animate-pulse rounded-2xl bg-cream" />
+        }
+      >
+        <ApartmentCatalogClient
+          apartments={apartments}
+          totalCount={totalCount}
+        />
+      </Suspense>
     </div>
   );
 }

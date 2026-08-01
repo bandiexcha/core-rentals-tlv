@@ -70,6 +70,7 @@ export interface ApartmentCatalog {
 }
 
 export interface ApartmentFilters {
+  city?: string;
   neighborhood?: string;
   guests?: number;
   bedrooms?: number;
