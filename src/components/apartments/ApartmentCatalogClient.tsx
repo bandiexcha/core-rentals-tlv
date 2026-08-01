@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import type { ApartmentWithCatalogCover } from "@/types/apartment";
 import { ApartmentGrid } from "@/components/apartments/ApartmentGrid";
 import { CatalogFiltersPanel } from "@/components/apartments/CatalogFiltersPanel";
@@ -29,7 +29,6 @@ export function ApartmentCatalogClient({
   apartments,
   totalCount,
 }: ApartmentCatalogClientProps) {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [state, setState] = useState<CatalogSearchState>(() =>
@@ -80,36 +79,41 @@ export function ApartmentCatalogClient({
   const syncUrl = (next: CatalogSearchState) => {
     const params = catalogSearchToParams(next);
     const query = params.toString();
-    router.replace(query ? `${pathname}?${query}` : pathname, {
-      scroll: false,
-    });
+    const href = query ? `${pathname}?${query}` : pathname;
+    // history.replaceState is reliable for query-only updates; Next's
+    // router.replace can no-op here while local filter state still updates.
+    if (typeof window !== "undefined") {
+      const current = `${window.location.pathname}${window.location.search}`;
+      if (current !== href) {
+        window.history.replaceState(window.history.state, "", href);
+      }
+    }
   };
 
   const updateState = (patch: Partial<CatalogSearchState>) => {
     setState((prev) => {
       const next = { ...prev, ...patch };
-      queueMicrotask(() => syncUrl(next));
       return next;
     });
   };
+
+  // Keep the address bar in sync after state commits (avoids side effects in setState).
+  useEffect(() => {
+    syncUrl(state);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- sync whenever filter state changes
+  }, [state, pathname]);
 
   // Drop neighborhood if it no longer belongs to the selected city
   useEffect(() => {
     if (!state.neighborhood) return;
     const stillValid = neighborhoods.some((n) => n.value === state.neighborhood);
     if (!stillValid) {
-      setState((prev) => {
-        const next = { ...prev, neighborhood: "" };
-        queueMicrotask(() => syncUrl(next));
-        return next;
-      });
+      setState((prev) => ({ ...prev, neighborhood: "" }));
     }
-  }, [neighborhoods, state.neighborhood, pathname, router]);
+  }, [neighborhoods, state.neighborhood]);
 
   const clearFilters = () => {
-    const next = { ...DEFAULT_CATALOG_SEARCH, sort: state.sort };
-    setState(next);
-    syncUrl(next);
+    setState({ ...DEFAULT_CATALOG_SEARCH, sort: state.sort });
   };
 
   const broadenSearch = () => {
