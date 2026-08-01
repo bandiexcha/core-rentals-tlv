@@ -77,23 +77,6 @@ export function ApartmentCatalogClient({
     };
   }, [drawerOpen]);
 
-  // Drop neighborhood if it no longer belongs to the selected city
-  useEffect(() => {
-    if (!state.neighborhood) return;
-    const stillValid = neighborhoods.some((n) => n.value === state.neighborhood);
-    if (!stillValid) {
-      setState((prev) => {
-        const next = { ...prev, neighborhood: "" };
-        const params = catalogSearchToParams(next);
-        const query = params.toString();
-        router.replace(query ? `${pathname}?${query}` : pathname, {
-          scroll: false,
-        });
-        return next;
-      });
-    }
-  }, [neighborhoods, state.neighborhood, pathname, router]);
-
   const syncUrl = (next: CatalogSearchState) => {
     const params = catalogSearchToParams(next);
     const query = params.toString();
@@ -105,10 +88,23 @@ export function ApartmentCatalogClient({
   const updateState = (patch: Partial<CatalogSearchState>) => {
     setState((prev) => {
       const next = { ...prev, ...patch };
-      syncUrl(next);
+      queueMicrotask(() => syncUrl(next));
       return next;
     });
   };
+
+  // Drop neighborhood if it no longer belongs to the selected city
+  useEffect(() => {
+    if (!state.neighborhood) return;
+    const stillValid = neighborhoods.some((n) => n.value === state.neighborhood);
+    if (!stillValid) {
+      setState((prev) => {
+        const next = { ...prev, neighborhood: "" };
+        queueMicrotask(() => syncUrl(next));
+        return next;
+      });
+    }
+  }, [neighborhoods, state.neighborhood, pathname, router]);
 
   const clearFilters = () => {
     const next = { ...DEFAULT_CATALOG_SEARCH, sort: state.sort };
