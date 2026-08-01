@@ -25,10 +25,10 @@ function publicApartment(apartment: Apartment): Apartment {
     ...sanitized,
     neighborhood: resolvedNeighborhood,
   });
+  // Prefer normalized city; never fall back to garbage/overseas or invent Tel Aviv.
   const city =
     location.city ||
-    (!isGarbageLocation(sanitized.city) ? sanitized.city.trim() : "") ||
-    "Tel Aviv";
+    (!isGarbageLocation(sanitized.city) ? sanitized.city.trim() : "");
   return {
     ...sanitized,
     city,

@@ -35,6 +35,8 @@ export function CatalogFiltersPanel({
   onApply,
   variant = "sidebar",
 }: CatalogFiltersPanelProps) {
+  const idPrefix = variant === "drawer" ? "drawer" : "sidebar";
+
   const toggleAmenity = (facet: AmenityFacet) => {
     const next = state.amenities.includes(facet)
       ? state.amenities.filter((a) => a !== facet)
@@ -93,6 +95,7 @@ export function CatalogFiltersPanel({
 
         <FilterSection title="Location">
           <FilterSelect
+            id={`${idPrefix}-city`}
             label="City"
             value={state.city}
             onChange={(city) =>
@@ -104,6 +107,7 @@ export function CatalogFiltersPanel({
             options={cities.map((c) => ({ value: c.value, label: c.label }))}
           />
           <FilterSelect
+            id={`${idPrefix}-neighborhood`}
             label="Neighborhood"
             value={state.neighborhood}
             onChange={(neighborhood) => onChange({ neighborhood })}
@@ -119,6 +123,7 @@ export function CatalogFiltersPanel({
             }
           />
           <FilterSelect
+            id={`${idPrefix}-street`}
             label="Street"
             value={state.street}
             onChange={(street) => onChange({ street })}
@@ -128,6 +133,7 @@ export function CatalogFiltersPanel({
 
         <FilterSection title="Apartment">
           <FilterSelect
+            id={`${idPrefix}-bedrooms`}
             label="Bedrooms"
             value={state.bedrooms === "any" ? "" : state.bedrooms}
             onChange={(v) =>
@@ -145,6 +151,7 @@ export function CatalogFiltersPanel({
           />
 
           <FilterSelect
+            id={`${idPrefix}-guests`}
             label="Guests"
             value={state.guests == null ? "" : String(state.guests)}
             onChange={(v) => onChange({ guests: v ? Number(v) : null })}
@@ -155,6 +162,7 @@ export function CatalogFiltersPanel({
           />
 
           <FilterSelect
+            id={`${idPrefix}-bathrooms`}
             label="Bathrooms"
             value={state.bathrooms == null ? "" : String(state.bathrooms)}
             onChange={(v) => onChange({ bathrooms: v ? Number(v) : null })}
@@ -287,6 +295,7 @@ function FilterSelect({
   disabled,
   emptyHint,
   anyLabel = "Any",
+  id,
 }: {
   label: string;
   value: string;
@@ -295,13 +304,20 @@ function FilterSelect({
   disabled?: boolean;
   emptyHint?: string;
   anyLabel?: string;
+  id?: string;
 }) {
+  const selectId =
+    id ?? `filter-${label.toLowerCase().replace(/\s+/g, "-")}`;
   return (
     <div>
-      <label className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted">
+      <label
+        htmlFor={selectId}
+        className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted"
+      >
         {label}
       </label>
       <select
+        id={selectId}
         value={value}
         disabled={disabled}
         onChange={(e) => onChange(e.target.value)}
