@@ -1,4 +1,4 @@
-node_modules
+﻿node_modules
 .next
 .git
 scripts
@@ -12,5 +12,5 @@ terminals
 .env*
 proof-screenshots
 tmp-slugs.json
-# Apartment binaries live on Vercel Blob (ASSETS.md) — never upload via Git LFS / deploy archive
+# Apartment binaries live on Vercel Blob — never upload via Git LFS / deploy archive
 public/apartments

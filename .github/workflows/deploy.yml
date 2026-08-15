@@ -1,4 +1,4 @@
-name: Deploy to Vercel
+﻿name: Deploy to Vercel
 
 # LFS bandwidth incident (2026-08): checkout with lfs:true pulled ~10GB of
 # apartment photos per run and exhausted GitHub LFS bandwidth.
