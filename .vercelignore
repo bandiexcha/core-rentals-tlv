@@ -10,3 +10,7 @@ agent-transcripts
 terminals
 *.log
 .env*
+proof-screenshots
+tmp-slugs.json
+# Apartment binaries live on Vercel Blob (ASSETS.md) — never upload via Git LFS / deploy archive
+public/apartments
