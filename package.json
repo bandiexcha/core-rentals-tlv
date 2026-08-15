@@ -23,9 +23,13 @@
     "audit:branding": "node scripts/audit-branding.mjs",
     "backfill:addresses": "node scripts/backfill-addresses.mjs",
     "approve": "node scripts/approve-apartment.mjs",
-    "publish:production": "node scripts/publish-production.mjs"
+    "publish:production": "node scripts/publish-production.mjs",
+    "media:upload": "node scripts/upload-apartments-to-blob.mjs",
+    "media:upload:dry": "node scripts/upload-apartments-to-blob.mjs --dry-run",
+    "check:assets": "node scripts/check-asset-size.mjs --staged"
   },
   "dependencies": {
+    "@vercel/blob": "^2.8.0",
     "next": "16.2.7",
     "nodemailer": "^8.0.10",
     "react": "19.2.4",

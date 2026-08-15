@@ -8,6 +8,7 @@ import {
   isGarbageLocation,
   normalizeApartmentLocation,
 } from "@/lib/location";
+import { resolveMediaUrl } from "@/lib/media";
 import { resolveNeighborhood } from "@/lib/neighborhood";
 import type {
   Apartment,
@@ -33,6 +34,10 @@ function publicApartment(apartment: Apartment): Apartment {
     ...sanitized,
     city,
     neighborhood: location.neighborhood,
+    images: (sanitized.images ?? []).map((img) => ({
+      ...img,
+      url: resolveMediaUrl(img.url),
+    })),
   };
 }
 

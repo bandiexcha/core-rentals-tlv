@@ -1,13 +1,16 @@
 name: Deploy to Vercel
 
+# LFS bandwidth incident (2026-08): checkout with lfs:true pulled ~10GB of
+# apartment photos per run and exhausted GitHub LFS bandwidth.
+# Production media lives on Vercel Blob — see ASSETS.md. Never set lfs:true.
+
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 env:
   VERCEL_ORG_ID: team_p0t8mS3RaJgm73KmKlClL0V4
   VERCEL_PROJECT_ID: prj_wFhRYQ9IXbaV2cSf9lVMAknCGBoc
+  GIT_LFS_SKIP_SMUDGE: "1"
 
 jobs:
   deploy:
@@ -15,15 +18,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
 
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
           cache: npm
 
+      - name: Guard — no Git LFS media in CI deploy path
+        run: |
+          if [ -z "${{ vars.NEXT_PUBLIC_MEDIA_BASE_URL }}" ]; then
+            echo "::error::NEXT_PUBLIC_MEDIA_BASE_URL must be set (Vercel Blob). See ASSETS.md."
+            exit 1
+          fi
+          if find public/apartments -type f -size +2M 2>/dev/null | head -1 | grep -q .; then
+            echo "::error::Large files under public/apartments — CI must not ship Git media."
+            exit 1
+          fi
+
       - name: Install Vercel CLI
         run: npm install -g vercel@54.9.1
 
-      - name: Deploy to Vercel
+      - name: Deploy to Vercel (code only)
+        env:
+          NEXT_PUBLIC_MEDIA_BASE_URL: ${{ vars.NEXT_PUBLIC_MEDIA_BASE_URL }}
         run: vercel deploy --prod --yes --archive=tgz --token=${{ secrets.VERCEL_TOKEN }}

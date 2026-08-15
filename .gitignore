@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # inquiry backup store (contains guest PII)
 /data/inquiries.json
@@ -48,3 +49,22 @@ scripts/.import-*.log
 next-env.d.ts
 
 .vercel
+
+# Vercel Blob upload resume manifest
+scripts/.blob-upload-manifest.json
+
+# Local apartment media stashes (never commit)
+apartments-stash/
+apartments-deploy-stash/
+**/apartments-stash/
+**/apartments-deploy-stash/
+
+# Audit / OCR / import junk
+audit-err.txt
+audit-prod-result.json
+branding-gallery-hits.json
+eng.traineddata
+holyguest-affected-slugs.txt
+tmp-seanrent-brand-ref.png
+import-holyguest*.log
+discover-seanrent*.log
