@@ -1,1 +1,5 @@
-﻿# Media must NOT use Git LFS as a CDN. See docs/MEDIA_STORAGE.md and ASSETS.md
+# Media must NOT use Git LFS as a CDN.
+# See docs/MEDIA_STORAGE.md and ASSETS.md.
+# Apartment photos: Vercel Blob (NEXT_PUBLIC_MEDIA_BASE_URL).
+# Do not re-add filter=lfs for public/apartments/**.
+# Historical LFS objects may still exist in git history (storage only).
