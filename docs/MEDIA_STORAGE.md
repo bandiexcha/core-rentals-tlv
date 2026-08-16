@@ -14,6 +14,11 @@ GitHub stores **code**. Production apartment photos must NOT use Git LFS as a CD
 - Enable `lfs: true` in GitHub Actions or rely on Git LFS during Vercel builds
 - Set `GIT_LFS_SKIP_SMUDGE` unset in CI (always skip LFS smudge for deploys)
 
+## Environment
+- `NEXT_PUBLIC_MEDIA_BASE_URL` is set on Vercel **Production** and **Development**.
+- **Preview** may be unset when the Vercel project is not linked to GitHub; `src/lib/media.ts` falls back to the public Blob host above.
+- GitHub Actions variable `NEXT_PUBLIC_MEDIA_BASE_URL` is set for the deploy guard.
+
 ## Migration / verify
 ```bash
 node scripts/migrate-apartments-to-blob.mjs
