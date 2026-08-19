@@ -27,9 +27,15 @@ export function formatInquiryEmail(data: InquiryPayload): string {
   ].join("\n");
 }
 
-async function sendViaResend(data: InquiryPayload): Promise<boolean> {
+export type InquiryEmailEvidence = {
+  sent: boolean;
+  provider: "resend" | "gmail" | "web3forms" | null;
+  messageId: string | null;
+};
+
+async function sendViaResend(data: InquiryPayload): Promise<InquiryEmailEvidence | null> {
   const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) return false;
+  if (!apiKey) return null;
 
   const from =
     process.env.RESEND_FROM ?? "Core Rentals TLV <onboarding@resend.dev>";
@@ -49,20 +55,26 @@ async function sendViaResend(data: InquiryPayload): Promise<boolean> {
     }),
   });
 
-  return response.ok;
+  if (!response.ok) return null;
+  const result = (await response.json()) as { id?: string };
+  return {
+    sent: true,
+    provider: "resend",
+    messageId: result.id ?? null,
+  };
 }
 
-async function sendViaGmail(data: InquiryPayload): Promise<boolean> {
+async function sendViaGmail(data: InquiryPayload): Promise<InquiryEmailEvidence | null> {
   const user = process.env.GMAIL_USER ?? SITE.inquiryEmail;
   const pass = process.env.GMAIL_APP_PASSWORD;
-  if (!pass) return false;
+  if (!pass) return null;
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: { user, pass },
   });
 
-  await transporter.sendMail({
+  const info = await transporter.sendMail({
     from: `"Core Rentals TLV" <${user}>`,
     to: SITE.inquiryEmail,
     replyTo: data.email,
@@ -70,12 +82,16 @@ async function sendViaGmail(data: InquiryPayload): Promise<boolean> {
     text: formatInquiryEmail(data),
   });
 
-  return true;
+  return {
+    sent: true,
+    provider: "gmail",
+    messageId: String(info.messageId ?? ""),
+  };
 }
 
-async function sendViaWeb3Forms(data: InquiryPayload): Promise<boolean> {
+async function sendViaWeb3Forms(data: InquiryPayload): Promise<InquiryEmailEvidence | null> {
   const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
-  if (!accessKey) return false;
+  if (!accessKey) return null;
 
   const response = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -96,21 +112,29 @@ async function sendViaWeb3Forms(data: InquiryPayload): Promise<boolean> {
     }),
   });
 
-  if (!response.ok) return false;
-  const result = (await response.json()) as { success?: boolean };
-  return result.success === true;
+  if (!response.ok) return null;
+  const result = (await response.json()) as { success?: boolean; submission_id?: string };
+  if (result.success !== true) return null;
+  return {
+    sent: true,
+    provider: "web3forms",
+    messageId: result.submission_id ?? null,
+  };
 }
 
-export async function sendInquiryEmail(data: InquiryPayload): Promise<boolean> {
+export async function sendInquiryEmail(
+  data: InquiryPayload
+): Promise<InquiryEmailEvidence> {
   const providers = [sendViaResend, sendViaGmail, sendViaWeb3Forms];
 
   for (const provider of providers) {
     try {
-      if (await provider(data)) return true;
+      const result = await provider(data);
+      if (result?.sent) return result;
     } catch {
       // Try next provider
     }
   }
 
-  return false;
+  return { sent: false, provider: null, messageId: null };
 }

@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/ui/Button";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { FaqSection } from "@/components/seo/FaqSection";
+import { SITE } from "@/lib/constants";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -75,6 +76,15 @@ export default function ContactPage() {
             and we&apos;ll suggest the best matches from our Tel Aviv collection.
           </p>
           <WhatsAppButton className="mt-6 w-full" />
+          <p className="mt-6 text-sm text-cream/80">
+            Email{" "}
+            <a
+              href={`mailto:${SITE.contactEmail}`}
+              className="text-gold-light hover:underline"
+            >
+              {SITE.contactEmail}
+            </a>
+          </p>
 
           <p className="mt-8 text-xs leading-relaxed text-cream/60">
             Learn more about our curation process on the{" "}

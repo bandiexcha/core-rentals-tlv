@@ -17,6 +17,7 @@ export function organizationSchema() {
     description: SITE.description,
     url: absoluteUrl("/"),
     telephone: `+${SITE.whatsappNumber}`,
+    email: SITE.contactEmail,
     areaServed: {
       "@type": "City",
       name: "Tel Aviv-Yafo",

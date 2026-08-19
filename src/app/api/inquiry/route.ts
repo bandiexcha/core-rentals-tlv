@@ -31,10 +31,10 @@ export async function POST(request: Request) {
     notes: body.notes?.trim(),
   };
 
-  const emailSent = await sendInquiryEmail(payload);
+  const delivery = await sendInquiryEmail(payload);
 
   try {
-    await saveInquiry(payload, emailSent);
+    await saveInquiry(payload, delivery.sent);
   } catch (err) {
     console.error("Failed to store inquiry:", err);
     return NextResponse.json(
@@ -43,8 +43,13 @@ export async function POST(request: Request) {
     );
   }
 
-  if (emailSent) {
-    return NextResponse.json({ success: true, emailSent: true });
+  if (delivery.sent) {
+    return NextResponse.json({
+      success: true,
+      emailSent: true,
+      provider: delivery.provider,
+      messageId: delivery.messageId,
+    });
   }
 
   return NextResponse.json({

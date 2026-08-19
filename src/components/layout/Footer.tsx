@@ -52,6 +52,14 @@ export function Footer() {
                   WhatsApp Concierge
                 </a>
               </li>
+              <li>
+                <a
+                  href={`mailto:${SITE.contactEmail}`}
+                  className="hover:text-gold-light"
+                >
+                  {SITE.contactEmail}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

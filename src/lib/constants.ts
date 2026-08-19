@@ -6,8 +6,12 @@ export const SITE = {
   city: "Tel Aviv",
   whatsappNumber: "972527599399",
   whatsappUrl: "https://wa.me/972527599399",
-  /** Inquiry delivery address — used server-side only, not shown on the public site yet */
-  inquiryEmail: "hello@corerentalstlv.com",
+  /**
+   * Canonical Core Rentals contact — Single Source of Truth.
+   * Never invent @corerentals.com / @corerentalstlv.com mailboxes.
+   */
+  contactEmail: "avishayairbnb@gmail.com",
+  inquiryEmail: "avishayairbnb@gmail.com",
 } as const;
 
 export const WHATSAPP_DEFAULT_MESSAGE = `Hello,

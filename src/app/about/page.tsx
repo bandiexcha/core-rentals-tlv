@@ -114,7 +114,15 @@ export default function AboutPage() {
           </div>
           <div className="grid gap-1 sm:grid-cols-[140px_1fr]">
             <dt className="font-medium text-navy">Contact</dt>
-            <dd className="text-muted">WhatsApp concierge</dd>
+            <dd className="text-muted">
+              WhatsApp concierge ·{" "}
+              <a
+                href={`mailto:${SITE.contactEmail}`}
+                className="text-mediterranean hover:underline"
+              >
+                {SITE.contactEmail}
+              </a>
+            </dd>
           </div>
         </dl>
       </section>
