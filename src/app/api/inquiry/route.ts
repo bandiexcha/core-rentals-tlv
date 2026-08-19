@@ -37,6 +37,15 @@ export async function POST(request: Request) {
     await saveInquiry(payload, delivery.sent);
   } catch (err) {
     console.error("Failed to store inquiry:", err);
+    if (delivery.sent) {
+      return NextResponse.json({
+        success: true,
+        emailSent: true,
+        provider: delivery.provider,
+        messageId: delivery.messageId,
+        stored: false,
+      });
+    }
     return NextResponse.json(
       { error: "Unable to save inquiry. Please contact us on WhatsApp." },
       { status: 500 },
