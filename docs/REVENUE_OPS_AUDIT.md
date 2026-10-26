@@ -81,7 +81,7 @@
 | Item | Value |
 |---|---|
 | Site | https://core-rentals-tlv.vercel.app |
-| Commit | *(fill after deploy)* |
+| Commit | `7e9eea3f876621e75f414795a9af00c329a6d472` |
 | Admin | https://core-rentals-tlv.vercel.app/admin/crm |
 | Campaign index | https://core-rentals-tlv.vercel.app/campaigns |
 | Example LP | https://core-rentals-tlv.vercel.app/campaigns/corporate-accommodation-tel-aviv |
