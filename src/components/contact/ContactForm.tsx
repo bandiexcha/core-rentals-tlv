@@ -2,19 +2,40 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
+import { ATTRIBUTION_COOKIE } from "@/lib/leads/attribution";
+import type { Attribution } from "@/lib/leads/types";
 
 interface InquiryResponse {
   success?: boolean;
   emailSent?: boolean;
   whatsappUrl?: string;
+  leadId?: string;
   error?: string;
+}
+
+function readAttributionCookie(): Attribution | undefined {
+  if (typeof document === "undefined") return undefined;
+  const match = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith(`${ATTRIBUTION_COOKIE}=`));
+  if (!match) return undefined;
+  try {
+    return JSON.parse(
+      decodeURIComponent(match.split("=").slice(1).join("="))
+    ) as Attribution;
+  } catch {
+    return undefined;
+  }
 }
 
 export function ContactForm() {
   const searchParams = useSearchParams();
   const prefillApartment = searchParams.get("apartment") ?? "";
+  const prefillDestination = searchParams.get("destination") ?? "";
+  const campaign = searchParams.get("campaign") ?? searchParams.get("utm_campaign") ?? "";
 
   const [submitted, setSubmitted] = useState(false);
+  const [leadId, setLeadId] = useState<string | null>(null);
   const [submittedViaWhatsApp, setSubmittedViaWhatsApp] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -27,6 +48,17 @@ export function ContactForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
+    const cookieAttr = readAttributionCookie() ?? {};
+    const attribution: Attribution = {
+      ...cookieAttr,
+      inquiryPage:
+        typeof window !== "undefined"
+          ? `${window.location.pathname}${window.location.search}`
+          : cookieAttr.inquiryPage,
+      campaignSlug: cookieAttr.campaignSlug || campaign || undefined,
+      utmCampaign: cookieAttr.utmCampaign || campaign || undefined,
+    };
+
     const payload = {
       name: String(data.get("name") ?? ""),
       email: String(data.get("email") ?? ""),
@@ -35,7 +67,13 @@ export function ContactForm() {
       checkin: String(data.get("checkin") ?? ""),
       checkout: String(data.get("checkout") ?? ""),
       guests: String(data.get("guests") ?? ""),
+      bedroomsRequested: String(data.get("bedroomsRequested") ?? ""),
+      destination: String(data.get("destination") ?? ""),
+      requirements: String(data.get("requirements") ?? ""),
       notes: String(data.get("notes") ?? ""),
+      message: String(data.get("notes") ?? ""),
+      consentMarketing: data.get("consentMarketing") === "on",
+      attribution,
     };
 
     try {
@@ -50,6 +88,8 @@ export function ContactForm() {
       if (!response.ok) {
         throw new Error(result.error ?? "Failed to send inquiry.");
       }
+
+      if (result.leadId) setLeadId(result.leadId);
 
       if (result.whatsappUrl) {
         setSubmittedViaWhatsApp(true);
@@ -77,6 +117,9 @@ export function ContactForm() {
           Email delivery is unavailable right now. Your inquiry was saved and
           we&apos;re opening WhatsApp so you can send it directly to our team.
         </p>
+        {leadId && (
+          <p className="mt-3 text-xs text-muted">Reference: {leadId}</p>
+        )}
       </div>
     );
   }
@@ -89,6 +132,9 @@ export function ContactForm() {
           Your inquiry has been received. Our concierge team will respond
           shortly.
         </p>
+        {leadId && (
+          <p className="mt-3 text-xs text-muted">Reference: {leadId}</p>
+        )}
       </div>
     );
   }
@@ -108,10 +154,28 @@ export function ContactForm() {
           defaultValue={prefillApartment}
           placeholder="Any, or name a specific apartment"
         />
+        <Field
+          label="Destination / area"
+          name="destination"
+          defaultValue={prefillDestination}
+          placeholder="Tel Aviv, neighborhood, or flexible"
+        />
+        <Field label="Bedrooms requested" name="bedroomsRequested" placeholder="e.g. 2" />
         <Field label="Check-in date" name="checkin" type="date" />
         <Field label="Check-out date" name="checkout" type="date" />
         <div className="sm:col-span-2">
           <Field label="Number of guests" name="guests" type="number" min={1} />
+        </div>
+        <div className="sm:col-span-2">
+          <label className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted">
+            Requirements
+          </label>
+          <textarea
+            name="requirements"
+            rows={2}
+            placeholder="Workspace, parking, near family, accessibility, etc."
+            className="w-full rounded-xl border border-sand-dark bg-sand px-4 py-3 text-sm text-navy placeholder:text-muted/60 focus:border-mediterranean focus:outline-none focus:ring-1 focus:ring-mediterranean"
+          />
         </div>
         <div className="sm:col-span-2">
           <label className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted">
@@ -123,6 +187,19 @@ export function ContactForm() {
             placeholder="Neighborhood preferences, special requests, corporate billing, etc."
             className="w-full rounded-xl border border-sand-dark bg-sand px-4 py-3 text-sm text-navy placeholder:text-muted/60 focus:border-mediterranean focus:outline-none focus:ring-1 focus:ring-mediterranean"
           />
+        </div>
+        <div className="sm:col-span-2">
+          <label className="flex items-start gap-3 text-sm text-muted">
+            <input
+              type="checkbox"
+              name="consentMarketing"
+              className="mt-1 rounded border-sand-dark"
+            />
+            <span>
+              I agree to be contacted about this inquiry and occasional updates
+              about Core Rentals TLV. You can opt out anytime.
+            </span>
+          </label>
         </div>
       </div>
 

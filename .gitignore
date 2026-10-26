@@ -34,8 +34,9 @@ yarn-error.log*
 .env*
 !.env.example
 
-# inquiry backup store (contains guest PII)
+# inquiry / CRM backup store (contains guest PII)
 /data/inquiries.json
+/data/leads.json
 
 # vercel
 .vercel

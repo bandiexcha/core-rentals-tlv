@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllApartments } from "@/lib/apartments";
+import { getAllCampaignSlugs } from "@/data/campaigns";
 import { getAllGuideSlugs } from "@/data/location-guides";
 import { SITE_URL } from "@/lib/seo";
 
@@ -31,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: `${SITE_URL}/campaigns`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
   ];
 
   const guidePages: MetadataRoute.Sitemap = getAllGuideSlugs().map((slug) => ({
@@ -39,6 +46,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.75,
   }));
+
+  const campaignPages: MetadataRoute.Sitemap = getAllCampaignSlugs().map(
+    (slug) => ({
+      url: `${SITE_URL}/campaigns/${slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.88,
+    })
+  );
 
   const apartmentPages: MetadataRoute.Sitemap = getAllApartments().map(
     (apt) => ({
@@ -49,5 +65,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...staticPages, ...guidePages, ...apartmentPages];
+  return [...staticPages, ...guidePages, ...campaignPages, ...apartmentPages];
 }

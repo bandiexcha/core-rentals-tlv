@@ -4,6 +4,8 @@ import { SITE, whatsappUrl } from "@/lib/constants";
 const exploreLinks = [
   { href: "/apartments", label: "Apartment Catalog" },
   { href: "/guides", label: "Tel Aviv Guides" },
+  { href: "/campaigns", label: "Campaign Destinations" },
+  { href: "/campaigns/corporate-accommodation-tel-aviv", label: "Corporate Stays" },
   { href: "/guides/tel-aviv-vacation-rentals", label: "Vacation Rentals" },
   { href: "/guides/beachfront-apartments-tel-aviv", label: "Beachfront Stays" },
   { href: "/about", label: "About Us" },

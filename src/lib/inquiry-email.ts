@@ -10,6 +10,7 @@ function inquirySubject(apartment?: string): string {
 }
 
 export function formatInquiryEmail(data: InquiryPayload): string {
+  const attr = data.attribution;
   return [
     "New availability inquiry — Core Rentals TLV",
     "",
@@ -18,12 +19,27 @@ export function formatInquiryEmail(data: InquiryPayload): string {
     `Phone: ${data.phone?.trim() || "—"}`,
     "",
     `Apartment: ${data.apartment?.trim() || "Any from catalog"}`,
+    `Destination: ${data.destination?.trim() || "—"}`,
     `Check-in: ${data.checkin?.trim() || "Flexible"}`,
     `Check-out: ${data.checkout?.trim() || "Flexible"}`,
     `Guests: ${data.guests?.trim() || "—"}`,
+    `Bedrooms requested: ${data.bedroomsRequested?.trim() || "—"}`,
     "",
-    "Notes:",
-    data.notes?.trim() || "—",
+    "Requirements:",
+    data.requirements?.trim() || "—",
+    "",
+    "Notes / message:",
+    data.message?.trim() || data.notes?.trim() || "—",
+    "",
+    "Attribution:",
+    `  utm_source: ${attr?.utmSource || "—"}`,
+    `  utm_medium: ${attr?.utmMedium || "—"}`,
+    `  utm_campaign: ${attr?.utmCampaign || "—"}`,
+    `  landing: ${attr?.landingPage || "—"}`,
+    `  inquiry page: ${attr?.inquiryPage || "—"}`,
+    `  referrer: ${attr?.referrer || "—"}`,
+    "",
+    `Marketing consent: ${data.consentMarketing ? "yes" : "no"}`,
   ].join("\n");
 }
 

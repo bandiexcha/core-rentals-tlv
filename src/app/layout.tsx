@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Suspense } from "react";
+import { Analytics } from "@/components/analytics/Analytics";
+import { AttributionCapture } from "@/components/attribution/AttributionCapture";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileWhatsAppButton } from "@/components/layout/MobileWhatsAppButton";
@@ -68,6 +71,10 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col font-sans">
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <Analytics />
+        <Suspense fallback={null}>
+          <AttributionCapture />
+        </Suspense>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

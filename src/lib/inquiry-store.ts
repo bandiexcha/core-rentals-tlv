@@ -34,12 +34,14 @@ async function readInquiries(): Promise<StoredInquiry[]> {
 
 export async function saveInquiry(
   payload: InquiryPayload,
-  emailSent: boolean
+  emailSent: boolean,
+  leadId?: string
 ): Promise<StoredInquiry> {
   const record: StoredInquiry = {
     id: randomUUID(),
     createdAt: new Date().toISOString(),
     emailSent,
+    leadId,
     ...payload,
   };
 
