@@ -26,15 +26,18 @@
     "publish:production": "node scripts/publish-production.mjs",
     "media:upload": "node scripts/upload-apartments-to-blob.mjs",
     "media:upload:dry": "node scripts/upload-apartments-to-blob.mjs --dry-run",
-    "check:assets": "node scripts/check-asset-size.mjs --staged"
+    "check:assets": "node scripts/check-asset-size.mjs --staged",
+    "reconnect:import": "node scripts/import-customer-reconnect.mjs"
   },
   "dependencies": {
     "@vercel/blob": "^2.8.0",
     "next": "16.2.7",
     "nodemailer": "^8.0.10",
+    "pdf-parse": "^2.4.5",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

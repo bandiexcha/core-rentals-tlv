@@ -37,6 +37,10 @@ yarn-error.log*
 # inquiry / CRM backup store (contains guest PII)
 /data/inquiries.json
 /data/leads.json
+/data/reconnect/
+/data/customer-imports/
+# never commit customer contact databases
+*.customer-contacts.json
 
 # vercel
 .vercel
