@@ -81,7 +81,9 @@
 | Item | Value |
 |---|---|
 | Site | https://core-rentals-tlv.vercel.app |
-| Commit | `7e9eea3f876621e75f414795a9af00c329a6d472` |
+| Commits | `7e9eea3` (CRM/campaigns/Orchestra), `b2b7021` (audit hash), `72b438f` (inquiry soft-fail) |
+| Production deploy | `dpl_FYuwQJe5EYocC41wWwiauqXMt8Pn` → https://core-rentals-tlv.vercel.app |
+| Inspect | https://vercel.com/bandiexchas-projects/core-rentals-tlv/FYuwQJe5EYocC41wWwiauqXMt8Pn |
 | Admin | https://core-rentals-tlv.vercel.app/admin/crm |
 | Campaign index | https://core-rentals-tlv.vercel.app/campaigns |
 | Example LP | https://core-rentals-tlv.vercel.app/campaigns/corporate-accommodation-tel-aviv |
@@ -98,7 +100,11 @@ node scripts/test-crm-e2e.mjs --base http://localhost:3000 --crm-password "$CRM_
 node scripts/test-crm-e2e.mjs --base https://core-rentals-tlv.vercel.app --crm-password "$CRM_ADMIN_PASSWORD" --orchestra-key "$ORCHESTRA_API_KEY"
 ```
 
-Scenarios covered by harness: campaign → contact UTM → inquiry → leadId → CRM recover → quote draft → metrics → mark lost; Orchestra attribution (if key); sitemap.
+### Local (with CRM password) — 2026-10-26
+PASS 9 · FAIL 0 · SKIP 1 (Orchestra key unset). Lead ID issued; attribution recovered; quote + metrics OK.
+
+### Production (https://core-rentals-tlv.vercel.app) — after `72b438f` deploy
+PASS 4 · FAIL 0 · SKIP 2. Campaign/contact/sitemap/inquiry HTTP 200. `leadId=none` and `emailSent=false` until **Upstash** + email providers are set on Vercel; WhatsApp fallback preserved (no 500). CRM/Orchestra skipped without secrets.
 
 **Do not** use real customer emails during testing.
 
