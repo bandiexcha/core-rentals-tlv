@@ -104,45 +104,18 @@ export async function POST(request: Request) {
     }
   }
 
+  let inquiryLegacyStored = false;
   try {
     await saveInquiry(payload, delivery.sent, leadId);
+    inquiryLegacyStored = true;
   } catch (err) {
     console.error("Failed to store inquiry:", err);
-    if (leadStored && delivery.sent) {
-      return NextResponse.json({
-        success: true,
-        emailSent: true,
-        provider: delivery.provider,
-        messageId: delivery.messageId,
-        leadId,
-        stored: true,
-        inquiryLegacyStored: false,
-      });
-    }
-    if (delivery.sent) {
-      return NextResponse.json({
-        success: true,
-        emailSent: true,
-        provider: delivery.provider,
-        messageId: delivery.messageId,
-        leadId,
-        stored: leadStored,
-      });
-    }
-    if (leadStored) {
-      return NextResponse.json({
-        success: true,
-        emailSent: false,
-        leadId,
-        whatsappUrl: inquiryWhatsAppUrl(payload),
-      });
-    }
-    return NextResponse.json(
-      { error: "Unable to save inquiry. Please contact us on WhatsApp." },
-      { status: 500 },
-    );
   }
 
+  const stored = leadStored || inquiryLegacyStored;
+
+  // Never hard-fail the guest journey: email and/or WhatsApp keep the commercial path open.
+  // Durable CRM recovery on Vercel still requires Upstash (documented blocker).
   if (delivery.sent) {
     return NextResponse.json({
       success: true,
@@ -150,6 +123,8 @@ export async function POST(request: Request) {
       provider: delivery.provider,
       messageId: delivery.messageId,
       leadId,
+      stored,
+      inquiryLegacyStored,
     });
   }
 
@@ -157,6 +132,10 @@ export async function POST(request: Request) {
     success: true,
     emailSent: false,
     leadId,
+    stored,
     whatsappUrl: inquiryWhatsAppUrl(payload),
+    storageWarning: stored
+      ? undefined
+      : "Inquiry could not be persisted server-side. Configure UPSTASH_REDIS_REST_URL/TOKEN for durable CRM recovery.",
   });
 }
