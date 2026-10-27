@@ -2,20 +2,20 @@ import { randomUUID } from "crypto";
 import fs from "fs/promises";
 import path from "path";
 import type { InquiryPayload, StoredInquiry } from "@/lib/inquiry-types";
+import { getUpstashRestConfig } from "@/lib/upstash";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_FILE = path.join(DATA_DIR, "inquiries.json");
 
 async function saveToUpstash(record: StoredInquiry): Promise<boolean> {
-  const baseUrl = process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!baseUrl || !token) return false;
+  const cfg = getUpstashRestConfig();
+  if (!cfg) return false;
 
   const response = await fetch(
-    `${baseUrl}/lpush/inquiries/${encodeURIComponent(JSON.stringify(record))}`,
+    `${cfg.url}/lpush/inquiries/${encodeURIComponent(JSON.stringify(record))}`,
     {
       method: "POST",
-      headers: { Authorization: `Bearer ${token}` },
+      headers: { Authorization: `Bearer ${cfg.token}` },
     },
   );
 

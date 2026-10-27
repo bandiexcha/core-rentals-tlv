@@ -8,6 +8,7 @@ import type {
   ReconnectContact,
 } from "@/lib/reconnect/types";
 import type { ExtractedRow } from "@/lib/reconnect/extract";
+import { getUpstashRestConfig, isUpstashConfigured } from "@/lib/upstash";
 
 const DATA_DIR = path.join(process.cwd(), "data", "reconnect");
 const CONTACTS_FILE = path.join(DATA_DIR, "contacts.json");
@@ -26,19 +27,16 @@ function nowIso() {
 }
 
 async function upstashConfigured() {
-  return Boolean(
-    process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
-  );
+  return isUpstashConfigured();
 }
 
 async function upstashFetch(command: (string | number)[]) {
-  const baseUrl = process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!baseUrl || !token) return null;
-  const response = await fetch(baseUrl, {
+  const cfg = getUpstashRestConfig();
+  if (!cfg) return null;
+  const response = await fetch(cfg.url, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${cfg.token}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify(command),

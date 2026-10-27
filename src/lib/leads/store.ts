@@ -12,6 +12,7 @@ import type {
 } from "@/lib/leads/types";
 import { LEAD_STATUSES } from "@/lib/leads/types";
 import { inferLeadSource, mergeAttribution } from "@/lib/leads/attribution";
+import { getUpstashRestConfig, isUpstashConfigured } from "@/lib/upstash";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_FILE = path.join(DATA_DIR, "leads.json");
@@ -39,22 +40,19 @@ function timelineEntry(
 }
 
 async function upstashConfigured(): Promise<boolean> {
-  return Boolean(
-    process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
-  );
+  return isUpstashConfigured();
 }
 
 async function upstashFetch(
   command: (string | number)[]
 ): Promise<{ result?: unknown; error?: string } | null> {
-  const baseUrl = process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!baseUrl || !token) return null;
+  const cfg = getUpstashRestConfig();
+  if (!cfg) return null;
 
-  const response = await fetch(baseUrl, {
+  const response = await fetch(cfg.url, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${cfg.token}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify(command),

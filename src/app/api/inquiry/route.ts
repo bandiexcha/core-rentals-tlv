@@ -4,7 +4,7 @@ import { saveInquiry } from "@/lib/inquiry-store";
 import type { InquiryPayload } from "@/lib/inquiry-types";
 import { inquiryWhatsAppUrl } from "@/lib/inquiry-whatsapp";
 import { FEATURE_FLAGS } from "@/lib/feature-flags";
-import { createLead } from "@/lib/leads/store";
+import { createLead, getLead } from "@/lib/leads/store";
 import type { Attribution } from "@/lib/leads/types";
 
 function sanitizeAttribution(raw: unknown): Attribution | undefined {
@@ -28,12 +28,28 @@ function sanitizeAttribution(raw: unknown): Attribution | undefined {
 }
 
 export async function POST(request: Request) {
-  let body: InquiryPayload & { attribution?: unknown };
+  let body: InquiryPayload & {
+    attribution?: unknown;
+    /** Controlled storage check only — no email/WhatsApp side effects. */
+    verifyLeadId?: string;
+  };
 
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
+  }
+
+  // Runtime Redis readback for controlled @example.invalid test leads (no PII dump).
+  if (typeof body.verifyLeadId === "string" && body.verifyLeadId.trim()) {
+    const lead = await getLead(body.verifyLeadId.trim());
+    const allowed = Boolean(lead?.email?.endsWith("@example.invalid"));
+    return NextResponse.json({
+      exists: allowed,
+      leadId: allowed ? lead!.id : null,
+      status: allowed ? lead!.status : null,
+      storage: allowed ? "upstash_or_durable" : "not_found_or_forbidden",
+    });
   }
 
   if (!body.name?.trim() || !body.email?.trim()) {
@@ -113,6 +129,14 @@ export async function POST(request: Request) {
   }
 
   const stored = leadStored || inquiryLegacyStored;
+  let persisted = false;
+  if (leadId) {
+    try {
+      persisted = Boolean(await getLead(leadId));
+    } catch {
+      persisted = false;
+    }
+  }
 
   // Never hard-fail the guest journey: email and/or WhatsApp keep the commercial path open.
   // Durable CRM recovery on Vercel still requires Upstash (documented blocker).
@@ -124,6 +148,7 @@ export async function POST(request: Request) {
       messageId: delivery.messageId,
       leadId,
       stored,
+      persisted,
       inquiryLegacyStored,
     });
   }
@@ -133,9 +158,10 @@ export async function POST(request: Request) {
     emailSent: false,
     leadId,
     stored,
+    persisted,
     whatsappUrl: inquiryWhatsAppUrl(payload),
     storageWarning: stored
       ? undefined
-      : "Inquiry could not be persisted server-side. Configure UPSTASH_REDIS_REST_URL/TOKEN for durable CRM recovery.",
+      : "Inquiry could not be persisted server-side. Configure Upstash Redis REST credentials for durable CRM recovery.",
   });
 }
